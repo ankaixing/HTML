@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding:0;
+	}
+		.wrap{
+			/*width: 960px;*/
+			margin: 0 auto;
+		}
+		header{
+			width: 100%;
+			height: 460px;
+			background: url(980_bg.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		section{
+			background: url(980_body_bg.jpg) no-repeat;
+			background-size: 100% 100%;
+			padding: 0 9.583333333%;
+			overflow: hidden;
+		}
+		.intr{
+			width: 100%;
+			margin-top: 5.625%;
+			font-size: 27px;
+			line-height: 1.5em;
+		}
+		.intr img{
+			vertical-align: middle;
+		}
+		.intr span{
+			color: orange;
+		}
+		.down{
+			text-align: center;
+			margin-top: 10.72916667%;
+		}
+		.f_title{
+			text-align: center;
+			font-size: 20px;
+			font-weight: bolder;
+			margin-top: 10.625%;
+		}
+		.f_title span{
+			font-size: 27px;
+			color: orange;
+		}
+		.line{
+			width: 100%;
+			height: 2px;
+			margin-top: 4.6875%;
+			background: url(960_line.jpg);
+		}
+		.user, .phone{
+			width: 37.5%;
+			margin: 0 auto;
+			margin-top: 1.875%;
+			border: 1px solid #e5e5e5; 
+		}
+		.user input{
+			width: 100%;
+		}
+		.phone input{
+			width: 100%;
+		}
+		.yz_content{
+			width: 37.5%;
+			margin: 0 auto;
+			margin-top: 1.875%;
+		}
+		.yz{
+			overflow: hidden;
+		}
+		.yz_t{
+			width: 66.66666667%;
+			border: 1px solid #e5e5e5;
+			float: left;
+		}
+		.yz_b{
+			width: 32.16%;
+			float: right;
+			background-color: orange;
+		}
+		.yz p{
+			margin-top: 1.875%; 
+			width: 40.27777778%;
+			font-size: 14px;
+			float: right;
+		}
+		.yz a img{
+			margin-top: 1.875%;
+			width: 35.55555556%;
+			float: right;
+		}
+		.ad{
+			margin: 0 auto;
+			width: 37.5%;
+			height: 46px;
+			background: url(ad.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin-top: 1.875%; 
+		}
+		footer{
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			margin-top: 1.875%;
+			background-color: orange;
+		}
+		footer p{
+			font-size: 24px;
+			color: #fff;
+			line-height: 30px;
+		}
+		@media only screen and (max-width: 960px) and (min-width: 641px){
+			.wrap{
+				/*width: 640px;*/
+				margin: 0 auto;
+			}
+			header{
+				width: 100%;
+				height: 460px;
+				background: url(640_bg.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			section{
+				background: url(640_body_bg.jpg) no-repeat;
+				background-size: 100% 100%;
+				padding: 0 7.96875%;
+				overflow: hidden;
+			}
+			.intr{
+			width: 100%;
+			margin-top: 8.59375%;
+			font-size: 27px;
+			line-height: 1.5em;
+		}
+		.intr img{
+			vertical-align: middle;
+		}
+		.intr span{
+			color: orange;
+		}
+		.down{
+			text-align: center;
+			margin-top: 8.4375%;
+		}
+		.down a img{
+			width:39.0625% 
+		}
+		.f_title{
+			text-align: center;
+			font-size: 20px;
+			font-weight: bolder;
+			margin-top: 10.625%;
+		}
+		.f_title span{
+			font-size: 20px;
+			color: orange;
+		}
+		.line{
+			width: 100%;
+			height: 2px;
+			margin-top: 4.6875%;
+			background: url(640_line.jpg);
+		}
+		.user, .phone{
+			width: 56.25%;
+			margin: 0 auto;
+			margin-top: 1.875%;
+			border: 1px solid #e5e5e5; 
+		}
+		.user input{
+			width: 100%;
+		}
+		.phone input{
+			width: 100%;
+		}
+		.yz_content{
+			width: 56.25%;
+			margin: 0 auto;
+			margin-top: 1.875%;
+		}
+		.yz{
+			overflow: hidden;
+		}
+		.yz_t{
+			width: 66.66666667%;
+			border: 1px solid #e5e5e5;
+			float: left;
+		}
+		.yz_b{
+			width: 32.16%;
+			float: right;
+			background-color: orange;
+		}
+		.yz p{
+			margin-top: 1.875%; 
+			width: 40.27777778%;
+			font-size: 12px;
+			float: right;
+		}
+		.yz a img{
+			margin-top: 1.875%;
+			width: 36.11111111%;
+			float: right;
+		}
+		.ad{
+			margin: 0 auto;
+			width: 56.25%;
+			height: 46px;
+			background: url(ad.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin-top: 1.875%; 
+		}
+		}
+		@media only screen and (max-width: 640px) and (min-width: 320px){
+			.wrap{
+			/*width: 320px;*/
+			margin: 0 auto;
+		}
+		header{
+			width: 100%;
+			height: 230px;
+			background: url(320_bg.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		section{
+				background: url(320_body_bg.jpg) no-repeat;
+				background-size: 100% 100%;
+				padding: 0 8.4375%;
+				overflow: hidden;
+			}
+			.intr{
+			width: 100%;
+			margin-top: 8.59375%;
+			font-size: 14px;
+			line-height: 1.5em;
+		}
+		.intr img{
+			vertical-align: middle;
+			width: 17.5%;
+		}
+		.intr span{
+			color: orange;
+		}
+		.down{
+			text-align: center;
+			margin-top: 8.4375%;
+		}
+		.down a img{
+			width:39.0625% 
+		}
+		.f_title{
+			text-align: center;
+			font-size: 11px;
+			font-weight: bolder;
+			margin-top: 10.625%;
+		}
+		.f_title span{
+			font-size: 16px;
+			color: orange;
+		}
+		.line{
+			width: 100%;
+			height: 2px;
+			margin-top: 4.6875%;
+			background: url(640_line.jpg);
+		}
+		.user, .phone{
+			width: 55.9375%;
+			margin: 0 auto;
+			margin-top: 1.875%;
+			border: 1px solid #e5e5e5; 
+		}
+		.user input{
+			width: 100%;
+		}
+		.phone input{
+			width: 100%;
+		}
+		.yz_content{
+			width: 55.9375%;
+			margin: 0 auto;
+			margin-top: 1.875%;
+		}
+		.yz{
+			overflow: hidden;
+		}
+		.yz_t{
+			width: 60.15642458%;
+			border: 1px solid #e5e5e5;
+			float: left;
+		}
+		.yz_b{
+			width: 38%;
+			float: right;
+			background-color: orange;
+		}
+		.yz p{
+			margin-top: 1.875%; 
+			width: 40.27777778%;
+			font-size: 9px;
+			float: right;
+		}
+		.yz a img{
+			margin-top: 1.875%;
+			width: 36.11111111%;
+			float: right;
+		}
+		.ad{
+			margin: 0 auto;
+			width: 55.625%;
+			height: 46px;
+			background: url(ad.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin-top: 1.875%; 
+		}
+		footer{
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			margin-top: 1.875%;
+			background-color: orange;
+		}
+		footer p{
+			font-size: 11px;
+			color: #fff;
+			line-height: 30px;
+		}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+		</header>
+		<section>
+			<p class="intr">使用全新掌上如家APP预定，会员折后<span>再减5元！</span>更有机会赢取<span>ipad mini2</span>，赶快下载预定吧！<a href=""><img src="activity.jpg" alt=""></a></p>
+			<div class="down">
+				<a href="#"><img src="btn_a.jpg" alt=""></a>
+				<a href="#"><img src="btn_p.jpg" alt=""></a>
+			</div>
+			<form action="">
+				<p class="f_title">免费注册如家会员，赢取<span>50元</span>手机话费</p>
+				<div class="line">
+				</div>
+				<div class="user"><input type="text" placeholder="姓名（4字内）"></div>
+				<div class="phone"><input type="text" placeholder="手机号码"></div>
+				<div class="yz_content">
+					<div class="yz">
+						<input class="yz_t" type="text" placeholder="获取验证码">
+						<input class="yz_b" type="button" value="获取验证码">
+						<a href="#"><img src="set_btn_960.jpg" alt=""></a>
+						<p>请填写真实信息以便享受会员权益</p>
+					</div>
+				</div>
+				<div class="ad"></div>
+			</form>
+		</section>
+		<footer>
+			<p>如家官方微信:homeinns2012</p>
+			<p>全国订房电话：400-820-3333</p>
+		</footer>
+	</div>
+</body>
+</html>

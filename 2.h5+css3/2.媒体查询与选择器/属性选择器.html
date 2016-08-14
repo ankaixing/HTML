@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3选择器</title>
+	<style>
+	/*a标签包含了href这个属性*/
+		a[href="###"]{
+			background-color: red;
+		}
+		/*a标签不仅仅包含href值也为###*/
+		a[href="#1"]{
+			background-color: blue;
+		}
+		/*a标签 属性名为href值包含单独的单词*/
+		a[href~="#3"]{
+			background-color: pink;
+		}
+		/*a标签 属性名为href值以-相连 通过第一部分去找a标签*/
+		a[href|="#123"]{
+			background-color: green;
+		}
+		/*属性值为##3 开头的*/
+		a[href^="##3"]{
+			background-color: yellow;
+		}
+		/*属性值为1结尾的*/
+		p[class$="1"]{
+			background-color: brown;
+		}
+		/*包含某一段属性值*/
+		p[href*=p]{
+			background-color: deepskyblue;
+		}
+	</style>
+</head>
+<body>
+	<a href="###">a1</a>
+	<a href="#1">a2</a>
+	<a href="#1 #3">a3</a>
+	<a href="#123-#456">a4</a>
+	<a href="##321">a5</a>
+	<p class="p341">p341</p>
+	<p href="123p5678">p123</p>
+</body>
+</html>

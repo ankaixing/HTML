@@ -1,0 +1,66 @@
+//变量
+@size:400px;
+@bgColor:#1ba2db;
+*{
+    margin: 0;
+    padding: 0;
+}
+.div1{
+    width: @size;
+    height: @size;
+    margin-left: @size;
+    background-color: @bgColor;
+}
+.p1{
+    background-color: @bgColor;
+}
+.p2{
+    background-color: @bgColor;
+}
+//混合
+.border-radius{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;
+    -o-border-radius:20px;
+    border: 20px solid red;
+}
+.div1{
+    .border-radius;
+    .trf(100px);
+}
+.trf(@trsX:500px){
+    transform: translateX(@trsX);
+    -webkit-transform: translateX(@trsX);
+    -moz-transform: translateX(@trsX);
+    -o-transform:translateX(@trsX);
+    -ms-transform:translateX(@trsX);
+}
+//嵌套
+.header{
+    background-color: yellow;
+    p{
+        width: 1000px;
+        margin: 0 auto;
+        background-color: green;
+        text-align: center;
+        font-size: 24px;
+        a{
+            color: #FFFF00;
+            font-size: 50px;
+            text-decoration: none;
+        }
+        a:nth-child(2){
+            color: #fff;
+        }
+        &:hover{
+            font-size: 100px;
+        }
+    }
+}
+//运算
+.div1{
+    width: @size*2;
+    height: @size*2;
+}

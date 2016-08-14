@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- 选择器的优先级 -->
+			<!-- 
+				id选择器>class选择器>标签名选择器
+
+
+
+			 -->
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+		/*id 选择器在当前页面中只存在唯一一个id值*/
+		#dream{
+			width: 100px;
+			height: 100px;
+			background:yellow;
+		}
+		#dream2{
+			width: 150px;
+			height: 150px;
+			background:red;
+		}
+		/*群组选择器*/
+		#moon, .wr{
+			width: 200px;
+			height: 200px;
+			background: yellow;
+		}
+		/*后代选择器(包括子集已经子集的子集)*/
+		.father div{
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		/*组合选择器*/
+		/*即使p标签，class又为div1，两个条件必须都满足*/
+		p.div1{
+			width: 300px;
+			height: 300px;
+			background: pink;
+
+		}
+	</style>
+</head>
+<body>
+	<!-- id选择器 -->
+	<div id="dream">1</div>
+	<div id="dream2">2</div>
+	<div id="dream">3</div>
+	<div>4</div>
+	<hr>
+	<!-- class选择器 -->
+	<div class="xtr">r</div>
+	<div class="xtr">e</div>
+	<div>w</div>
+	<div>q</div>
+
+
+	<hr>
+
+	<div id="moon">11</div>
+	<div >22</div>
+	<div class="wr">33</div>
+	<div class="wr">44</div>
+
+  <hr>
+		<div class="father">
+			<div>跟着我左手右手</div>
+			<span>一个慢动作</span>
+
+		</div>
+
+<div>
+	<div class="div1"></div>
+	<p class="div1"></p>
+</div>
+
+</body>
+</html>

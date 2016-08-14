@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" >
+		.wrap{
+			border: 1px solid red;
+			overflow: hidden;
+		}
+		.div1,.div2,.div3{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+		/*清楚浮动
+			1、clear:both;
+			2、BFC  ,给父级变成bfc
+			3、父级浮动可以清楚子级浮动
+			注意：想要用浮动的话，容器内的元素一般全都是浮动
+		*/
+		.div1{
+			float: left;
+		}
+		.div2{
+			float: left;
+		}
+		.div3{
+			float: left;
+		}
+		.content{
+			width: 200px;
+			height: 200px;
+			background-color: #ff0000;
+		}
+		/*.clear{
+			clear: both;
+		}*/
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		
+		<div class="div1">1</div>
+		<div class="div2">2</div>
+		<div class="div3">3</div>
+		<div class="clear"></div>
+
+	</div>
+	<div class="content">123</div>
+</body>
+</html>

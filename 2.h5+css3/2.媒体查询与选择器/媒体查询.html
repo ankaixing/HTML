@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: red;
+		}
+		p{
+			font-size: 50px;
+		}
+		span{
+			font-size: 50px;
+		}
+		/*only 可以省略
+		sreen媒体查询选择屏幕
+		and连接条件(max-width: 980px;)*/
+		@media screen and (max-width: 980px) and (min-width: 641px){
+			body {
+				background-color:yellow;
+			}
+			p{
+				font-size: 30px;
+			}
+			span{
+				font-size: 20px;
+			}
+
+		}
+		@media screen and (max-width: 640px){
+			body{
+				background-color: blue;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<p>lalalalalalalal</p>
+	<span>ghgjfjfhf</span>
+</body>
+</html>

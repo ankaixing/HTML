@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@-webkit-keyframes move{
+			from{
+				-webkit-transform: translate(0);
+				-ms-transform: translate(0);
+				-o-transform: translate(0);
+				transform: translate(0);
+			}
+			30%{
+				-webkit-transform: translateX(200px);
+				-ms-transform: translateX(200px);
+				-o-transform: translateX(200px);
+				transform: translateX(200px);
+			}
+			60%{
+				-webkit-transform: translateZ(200px);
+				-ms-transform: translateZ(200px);
+				-o-transform: translateZ(200px);
+				transform: translateZ(200px);
+			}
+			to{
+				-webkit-transform: translateX(200px);
+				-ms-transform: translateX(200px);
+				-o-transform: translateX(200px);
+				transform: translateX(200px);
+			}
+		}
+		html,body{
+			height: 100%;
+		}
+		body{
+			position: relative;
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+			background: red;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -100px;
+			margin-top: -100px;
+
+			-webkit-animation: "move" 2s  linear 5 2s normal forwards;
+			-o-animation: "move" 2s  linear 5 2s normal forwards;
+			animation: "move" 2s  linear 5 2s normal forwards;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+</body>
+</html>

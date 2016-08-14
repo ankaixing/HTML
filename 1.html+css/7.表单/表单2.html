@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 
+		input text 文本输入框
+			  password密码输框 
+			  button按钮
+			  radio单选框
+			  checkbox复选框
+			  submit 提交
+			  reset 重置
+			  file文件
+	 -->
+
+
+	<style>
+	*{
+		border: none;
+
+	}
+	.wrap{
+		width: 980px;
+		margin: 0 auto;
+		background-color: #ff0;
+		margin-top: 100px;
+		height: 2000px;
+	}
+	.wrap h1{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h1>中国南海熊猫对参军登记表</h1>
+		<!-- 请求方法有get和post方式
+		get有点速度快，给服务压力小但是安全性差，提交信息一目了然传送文件小
+		post优点保密性好，可以上传较大的文件，缺点速度慢，给服务器有一定的压力
+		 -->
+		<form action="" method="post">
+			<p>姓名:<input type="text" name="user"></p>
+			
+			<p><label for="mima">密码:</label><input id="mima" type="password" name="password"></p>
+			<p>性别:<select name="sex" id="">
+				<option value="man">男</option>
+				<option value="woman">女</option>
+				<option value="other">其他</option>
+			</select></p>
+			<!-- 单选框 -->
+			<p>参与兵种:<input type="radio" name="bz" value="pb">炮兵
+						<input type="radio" name="bz" value="bb">步兵
+						<input type="radio" name="bz" value="cz">炊事班
+						<input type="radio" name="bz" value="wy">文艺兵
+			</p>
+			<p>
+				<!-- 复选框 -->
+				兴趣爱好: <input type="checkbox" name="hobby" value="art">艺术
+				<input type="checkbox" name="hobby" value="chect">下棋
+				<input type="checkbox" name="hobby" value="codn">编程
+				<input type="checkbox" name="hobby" value="sing">唱歌
+			</p>
+			<!-- 多行文本输入框 -->
+			<!-- 行和列数规定了初始宽度 -->
+			<textarea name="ta" id="" cols="30" rows="4"></textarea>
+			<!-- 文件上传 -->
+			<!-- label标签，标记作用 -->
+			<label for="file1">上传文件</label>
+			<input id="file1" type="file" name="f">
+			<!-- 重置reset -->
+			<input type="reset">
+			<input type="submit" value="我要参军">
+		</form>
+	</div>
+</body>
+</html>

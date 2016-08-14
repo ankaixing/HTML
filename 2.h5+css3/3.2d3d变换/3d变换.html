@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html,body{
+			height:100%;
+		}
+		body{
+			position:relative;
+			/*透视点  给父级加*/
+			perspective:1000px;
+			/*开启3d模式   给3d元素父级加*/
+			/*trfs*/
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+			top: 50%;
+			left: 50%;
+			margin-left: -100px;
+			margin-right: -100px;
+			background-color: red;
+			position: absolute;
+			-webkit-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s;
+			font-size: 50px;
+			color: #fff;
+			line-height: 200px;
+			text-align: center;
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+			/*透视点的位置*/
+			/*-webkit-perspective-origin: 0 0;
+				-ms-perspective-origin: 0 0;
+				-o-perspective-origin: 0 0;
+				perspective-origin: 0 0;
+*/
+		}
+		.div1:hover{
+				-webkit-transform: translateZ(-500px);
+				-ms-transform: translateZ(-500px);
+				-o-transform: translateZ(-500px);
+				transform: translateZ(-500px);
+
+				-webkit-transform: rotateX(70deg);
+				-ms-transform: rotateX(70deg);
+				-o-transform: rotateX(70deg);
+				transform: rotateX(70deg);
+
+				-webkit-transform: rotateY(80deg);
+				-ms-transform: rotateY(80deg);
+				-o-transform: rotateY(80deg);
+				transform: rotateY(80deg);
+
+				-webkit-transform: rotateY(45deg) translateZ(500px);
+				-ms-transform: rotateY(45deg) translateZ(500px);
+				-o-transform: rotateY(45deg) translateZ(500px);
+				transform: rotateY(45deg) translateZ(500px);
+
+				-webkit-transform: translateZ(500px) rotateY(45deg);
+				-ms-transform: translateZ(500px) rotateY(45deg);
+				-o-transform: translateZ(500px) rotateY(45deg);
+				transform: translateZ(500px) rotateY(45deg);
+
+				-webkit-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				-o-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">哈哈哈</div>	
+</body>
+</html>

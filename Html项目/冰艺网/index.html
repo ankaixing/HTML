@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background:url(./img/bg_body.png) repeat-x rgb(242,242,242);
+		}
+		.wrap{
+			width: 100%;
+		}
+		header{
+			width: 100%;
+			height: 63px;
+			line-height: 63px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			background: url(./img/bg_head.png);
+		}
+		nav{
+			margin: 0 auto;
+			text-align: center;
+			width: 935px;
+			overflow: hidden;
+		}
+		nav .logo{
+			float: left;
+			width: 182px;
+			height: 38px;
+			background: url(./img/logo.png) no-repeat;
+			margin-top: 10px;
+			display: inherit;
+			position: relative;
+		}
+		nav a span{
+			position: absolute;
+			width: 100%;
+			height:100%;
+			top: 0;
+			left: 0;
+			background: url(./img/logo.png) no-repeat 0px -38px;
+			opacity: 0;
+		}
+		nav .logo:hover span{
+			opacity: 1;
+			-webkit-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+		}
+		.nav_mneu{
+			overflow: hidden;
+			float: right;
+			width: 484px;
+			height: 40px;
+			line-height: 40px;
+			margin-top: 8px;
+			overflow: hidden;
+			display: inherit;
+		}
+		.nav_mneu a{
+			float: left;
+			display: inherit;
+			position: relative;
+			text-decoration: none;
+			color: black;
+			margin-right: 40px;
+			height: 40px;
+			width: 44px;
+			/*background: url(./img/nav.png);*/
+		}
+		.nav_mneu a:nth-child(1){
+			background: url(./img/nav.png) no-repeat  -1px -41px;
+			width: 44px;
+		}
+		.nav_mneu a:nth-child(2){
+			background: url(./img/nav.png) no-repeat  -93px 0px;
+			width: 42px;
+		}
+		.nav_mneu a:nth-child(3){
+			width: 85px;
+			background: url(./img/nav.png) no-repeat  -177px 0px;
+		}
+		.nav_mneu a:nth-child(4){
+			width: 80px;
+			background: url(./img/nav.png) no-repeat  -303px 0px;
+		}
+		.nav_mneu a:nth-child(5){
+			background: url(./img/nav.png) no-repeat  -427px 0px;
+			width: 68px;
+			margin-right: 0px;
+		}
+
+		.banner{
+			width: 100%;
+			padding-top:106px;
+			background: url(./img/bg_banner.jpg) center top no-repeat;
+		}
+		.banner .showf{
+			overflow: hidden;
+			margin: auto;
+			width: 100%;
+			height: 440px;
+			position: relative;
+		}
+		.showf .shows{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.shows img:nth-child(1){
+			display: block;
+			margin: auto;
+		}
+		.shows img:nth-child(2){
+			display: block;
+			margin: auto;
+			margin-top: 12px;
+		}
+		.banner .button{
+			width: 219px;
+			display: block;
+			margin: auto;
+		}
+		.banner .button a{
+			float: left;
+			display: inline;
+			width: 23px;
+			height: 23px;
+			margin-right: 1px;
+			background: url(./img/bg_banner_button.png);
+		}
+		.banner .button a:nth-child(2){
+			background-position: -23px 0px;
+		}
+		.banner .button a:nth-child(3){
+			background-position: -46px 0px;
+		}
+		.banner .button a:nth-child(4){
+			background-position: -69px 0px;
+		}
+		.banner .button a:nth-child(5){
+			background-position: -91px 0px;
+		}
+		.banner .button a:nth-child(6){
+			background-position: -114px 0px;
+		}
+		.banner .button a:nth-child(7){
+			background-position: -137px 0px;
+		}
+		.banner .button a:nth-child(8){
+			background-position: -160px 0px;
+		}
+		.banner .button a:nth-child(9){
+			background-position: -183px 0px;
+		}
+		.banner .f{
+			width: 723px;
+			height: 16px;
+			background:url(./img/banner_f.png);
+			display: black;
+			margin: auto;
+			margin-top: 12px;
+		}
+		section{
+			padding-bottom: 270px;
+			overflow: hidden;
+		}
+		.container{
+			margin: auto;
+			text-align: left;
+			width: 935px;
+		}
+		.container ul{
+			list-style: none;
+			overflow: hidden;
+		}
+		.container ul li{
+			float: left;
+			display: inline;
+			margin-right: 14px;
+			width: 302px;
+			height: 215px;
+			background: url(./img/bg_case_f.png) center bottom no-repeat;
+			position: relative;
+		}
+		.container ul li:nth-child(3n){
+			margin-right: 0px;
+		}
+		.case_w{
+			display: block;
+			width: 262px;
+			height: 145px;
+			padding: 20px;
+			background: url(./img/bg_case.png) no-repeat;
+			position: absolute;
+			left: 0px;
+			bottom: 14px;
+			-webkit-transition: all 1s;
+			-o-transition: all 1s;
+			transition: all 1s;
+		}
+		.case_w:hover{
+			-webkit-transform: translateY(-19px);
+			-ms-transform: translateY(-19px);
+			-o-transform: translateY(-19px);
+			transform: translateY(-19px);
+		}
+		.op{
+			background: rgba(0,0,0,0);
+			position: absolute;
+			width: 262px;
+			height: 148px;
+			top: 20px;
+			left: 20px;
+			opacity: 0
+		}
+		.case_w .x{
+			position: absolute;
+			width: 61px;
+			height: 61px;
+			top: 60px;
+			background: url(./img/zoom-icon.png);
+			opacity: 0;
+		}
+		.case_w .y{
+			position: absolute;
+			width: 61px;
+			height: 61px;
+			top: 60px;
+			right: 20px;
+			background: url(./img/readmore-icon.png);
+			opacity: 0;
+		}
+		.case_w:hover .op{
+			background: rgba(0,0,0,0.5);
+			-webkit-transition: all 1s;
+			-o-transition: all 1s;
+			transition: all 1s;
+			opacity: 1;
+		}
+		.case_w:hover .y{
+			-webkit-transform: translateX(-60px);
+			-ms-transform: translateX(-60px);
+			-o-transform: translateX(-60px);
+			transform: translateX(-60px);
+			-webkit-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+			opacity: 1;
+		}
+		.case_w:hover .x{
+			-webkit-transform: translateX(60px);
+			-ms-transform: translateX(60px);
+			-o-transform: translateX(60px);
+			transform: translateX(60px);
+			-webkit-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+			opacity: 1
+		}
+		.clear{
+			clear: both;
+		}
+		.box_t{
+			margin-top: 10px;
+			height: 27px;
+			background: url(./img/box_t.png);
+		}
+		.box_b{
+			height: 27px;
+			background: url(./img/box_b.png);
+		}
+		.box_m{
+			background: url(./img/box_m.png) repeat-y;
+			padding: 0px 29px 0px 29px;
+			overflow: hidden;
+		}
+		.box_m img{
+			float: left;
+			display: inline;
+		}
+		.box_m a{
+			float: right;
+			position: relative;
+			width: 160px;
+			height: 41px;
+			background: url(./img/recommend_read_more.png);
+		}
+		.box3_m{
+			background: url(./img/box3_m.png) repeat-y;
+			padding: 0px 29px;
+			overflow: hidden;
+		}
+		.box3_m a{
+			float: left;
+			width: 258px;
+			height: 90px;
+			position: relative;
+		}
+		.box3_m a:nth-child(1){
+			background: url(./img/box3_bg1.png) no-repeat;
+			margin-right: 28px;
+		}
+		.box3_m a:nth-child(2){
+			background: url(./img/box3_bg2.png) no-repeat;
+			margin-right: 28px;
+		}
+		.box3_m a:nth-child(3){
+			background: url(./img/box3_bg3.png) no-repeat;
+			float: right;
+		}
+		.box3_m a:nth-child(4){
+			background: url(./img/box3_bg4.png) no-repeat;
+			margin-top: 42px;
+			margin-right: 28px;
+		}
+		.box3_m a:nth-child(5){
+			background: url(./img/box3_bg5.png) no-repeat;
+			margin-right: 28px;
+			margin-top: 42px;
+		}
+		.box3_m a:nth-child(6){
+			background: url(./img/box3_bg6.png) no-repeat;
+			margin-top: 42px;
+			float: right;
+		}
+		.bs3_2{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+		.box3_m a span{
+			visibility: hidden;
+		}
+		.box3_m a:hover:nth-child(1) span{
+			visibility: visible;
+		}
+		.box3_m a:hover:nth-child(2) span{
+			visibility: visible;
+		}
+		.box3_m a:hover:nth-child(3) span{
+			visibility: visible;
+		}
+		.box3_m a:hover:nth-child(4) span{
+			visibility: visible;
+		}
+		.box3_m a:hover:nth-child(5) span{
+			visibility: visible;
+		}
+
+		.box3_m a:hover:nth-child(6) span{
+			visibility: visible;
+		}
+		.box2_t{
+			background: url(./img/box2_t.png) no-repeat;
+			height: 22px;
+			margin-top: 22px;
+		}
+		.box2_m{
+			background: url(./img/box2_m.png) repeat-y;
+			padding: 0 29px;
+			overflow: hidden;
+		}
+		.box2_b{
+			background: url(./img/box2_b.png) no-repeat;
+			height: 22px;
+		}
+		.fl_dl{
+			float: left;
+			display: inline;
+			width: 252px;
+			font-size: 11px;
+			line-height: 21px;
+			position: relative;
+			color: #787878;
+		}
+		#a1{
+			position: absolute;
+			width: 99px;
+			height: 49px;
+			background:url(./img/label.png);
+			top: 10px;
+			left: -34px;
+			z-index: 100;
+		}
+		#a1 span{
+			background: url(./img/label.png) 0 -49px;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			-webkit-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+		}
+		#a1:hover span{
+			opacity: 1;
+		}
+		.fr_dr{
+			float: right;
+			width: 545px;
+			margin-right: 16px;
+			display: inline;
+			overflow: hidden;
+		}
+		.fr_dr img:nth-child(2){
+			float: left;
+			margin-top: 22px;
+		}
+		.fl_dl .r{
+			float: left;
+		}
+		.fr_dr .r img{
+			margin-top: 22px;
+		}
+		.fr_dr .r p{
+			float: left;
+			font-size: 11px;
+			color: #787878;
+			line-height: 21px;
+			width: 309px;
+			margin: 8px 4px 0 12px;
+		}
+		.pop_bg{
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			width: 100%;
+			height: 100%;
+			opacity: 0.7;
+			background: #000;
+			display: none;
+		}
+		.out{
+			background: url(./img/out_line.png) center center repeat-x;
+			height: 92px;
+			margin: 28px 0 28px 0;
+			position: relative;
+		}
+		.out .m{
+			width: 600px;
+			margin: auto;
+			overflow: hidden;
+		}
+		.out .m a{
+			height: 92px;
+			width: 92px;
+			background: url(./img/out_btn.png)no-repeat;
+			float: left;
+			display: inline;
+			margin-right:34px;
+			position: relative;
+		}
+		.out .m a:nth-child(1){
+			background: url(./img/out_btn.png)no-repeat 0px 0;
+
+		}
+		.out .m a:nth-child(2){
+			background: url(./img/out_btn.png)no-repeat -125px 0;
+
+		}
+		.out .m a:nth-child(3){
+			background: url(./img/out_btn.png)no-repeat -251px 0;
+
+		}
+		.out .m a:nth-child(4){
+			background: url(./img/out_btn.png)no-repeat -378px 0;
+
+		}
+		.out .m a:nth-child(5n){
+			background: url(./img/out_btn.png)no-repeat -502px 0;
+			margin-right: 0;
+		}
+		.m a span{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			-webkit-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+		}
+		.m a:nth-child(1) span{
+			background: url(./img/out_btn.png)no-repeat 0px -93px;
+			opacity: 0;
+		}
+		.m a:nth-child(2) span{
+			background: url(./img/out_btn.png)no-repeat -125px -93px;opacity: 0;
+		}
+		.m a:nth-child(3) span{
+			background: url(./img/out_btn.png)no-repeat -251px -93px;opacity: 0;
+		}
+		.m a:nth-child(4) span{
+			background: url(./img/out_btn.png)no-repeat -378px -93px;opacity: 0;
+		}
+		.m a:nth-child(5) span{
+			background: url(./img/out_btn.png)no-repeat -502px -93px;opacity: 0;
+		}
+		.m a:hover span{
+			opacity: 1;
+		}
+		.copy{
+			text-align: center;
+			color: rgb(146,146,146);
+		}
+		.copy span{
+			color: rgb(146,190,36);
+		}
+		footer{
+			width: 100%;
+			height: 267px;
+			position: fixed;
+			left: 0;
+			bottom: 0px;
+			z-index: 99;
+			background: url(./img/bg_foot.png) center top no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<nav>
+				<a class="logo" href="#"><span></span></a>
+				<div class="nav_mneu">
+					<a href="#"><span></span></a>
+					<a href="#"><span class="span2"></span></a>
+					<a href="#"><span></span></a>
+					<a href="#"><span></span></a>
+					<a href="#"><span></span></a>
+				</div>
+			</nav>
+		</header>
+		<div class="banner">
+			<div class="showf">
+				<div class="shows">
+					<img src="./img/banner_text1.png" alt="">
+					<img src="./img/banner_img1.png" alt="">
+				</div>
+			</div>
+			<div class="button">
+				<a href="javascript:void(0)"></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+			<div class="f"></div>
+		</div>
+		<section>
+			<div class="container">
+				<ul>
+					<li>
+						<div class="case_w">
+							<img src="./img/1.png" alt="">
+							<div class="op"></div>
+							<a class="x" href="#"></a>
+							<a class="y" href="#"></a>
+						</div>
+					</li>
+					<li>
+						<div class="case_w">
+							<img src="./img/2.png" alt="">
+							<div class="op"></div>
+							<a class="x" href="#"></a>
+							<a class="y" href="#"></a>
+						</div>
+					</li>
+					<li>
+						<div class="case_w">
+							<img src="./img/3.png" alt="">
+							<div class="op"></div>
+							<a class="x" href="#"></a>
+							<a class="y" href="#"></a>
+						</div>
+					</li>
+					<li>
+						<div class="case_w">
+							<img src="./img/4.png" alt="">
+							<div class="op"></div>
+							<a class="x" href="#"></a>
+							<a class="y" href="#"></a>
+						</div>
+					</li>
+					<li>
+						<div class="case_w">
+							<img src="./img/5.png" alt="">
+							<div class="op"></div>
+							<a class="x" href="#"></a>
+							<a class="y" href="#"></a>
+						</div>
+					</li>
+					<li>
+						<div class="case_w">
+							<img src="./img/6.png" alt="">
+							<div class="op"></div>
+							<a class="x" href="#"></a>
+							<a class="y" href="#"></a>
+						</div>
+					</li>
+				</ul>
+				<div class="clear"></div>
+				<div class="box_t"></div>
+				<div class="box_m">
+					<img src="./img/text_recommend.png
+					" alt="">
+					<a href=""></a>
+				</div>
+				<div class="box_b"></div>
+				<div class="box_t"></div>
+				<div class="box3_m">
+					<a href="javascript:void(0);"><span class="bs3_2" style="background: url(./img/box3_bg1.png) no-repeat 0% -94px;"></span></a>
+					<a href=""><span class="bs3_2" style="background: url(./img/box3_bg2.png) no-repeat 0% -94px;"></span></a>
+					<a href=""><span class="bs3_2" style="background: url(./img/box3_bg3.png) no-repeat 0% -94px;"></span></a>
+					<a href=""><span class="bs3_2" style="background: url(./img/box3_bg4.png) no-repeat 0% -94px;"></span></a>
+					<a href=""><span  class="bs3_2" style="background: url(./img/box3_bg5.png) no-repeat 0% -94px;"></span></a>
+					<a href=""><span  class="bs3_2" style="background: url(./img/box3_bg6.png) no-repeat 0% -94px;"></span></a>
+				</div>
+				<div class="box_b"></div>
+				<div class="box2_t"></div>
+				<div class="box2_m">
+					<div class="fl_dl">
+						<img src="./img/head.jpg" alt="">
+						<p>冰艺工作室国内优秀互联网建站平台</p>
+						<p>创始人：国内优秀设计师站酷推荐设计师、韩冰云</p>
+						<p>Ice art was founded in 2010, is by a group of professional and unique team of IT elite.
+						</p>
+						<p>
+							All along, Iceart close to network development trend of age of art..
+							<a id="a1" href="">
+								<span></span>
+							</a>
+						</p>
+					</div>
+					<div class="fr_dr">
+						<img src="./img/text_service.png" alt="">
+						<img src="./img/service_logo.png" alt="">
+						<div class="r">
+							<img src="./img/service_btn.png" alt="">
+							<p>致力于视觉传达领域,提供企业形象管理,视觉创意设计网站建设与维护、多媒体设计制作等服务, 目前已形成一套科学完整、高效的设计运作体系，凭借高品位的设计风格、精湛的制作工艺..
+				</p>
+						</div>
+					</div>
+				</div>
+				<div class="box2_b"></div>
+				<div class="pop_bg"></div>
+			</div>
+			<div class="out">
+				<div class="m">
+					<a href="">
+						<span></span>
+					</a>
+					<a href=""><span></span></a>
+					<a href=""><span></span></a>
+					<a href=""><span></span></a>
+					<a href=""><span></span></a>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2010-2014<span>IceArt</span> All Internet
+			</div>
+		</section>
+		<footer></footer>
+	</div>
+</body>
+</html>

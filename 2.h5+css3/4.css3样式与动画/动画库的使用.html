@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="animate.css">
+	<style>
+		.div1{
+			width: 200px;
+			height: 200px;
+			background: blue;
+			display: inline-block;
+
+			-webkit-animation: "flash" 1s ;
+			-o-animation: "flash" 1s ;
+			animation: "flash" 1s ;
+		}
+		.div2{
+			width: 200px;
+			height: 200px;
+			background: red;
+			display: inline-block;
+
+			-webkit-animation: "flash" 1s;
+			-o-animation: "flash" 1s;
+			animation: "flash" 1s ;
+		}
+		.div1:hover{
+			-webkit-animation: "tada" 1s;
+			-o-animation: "tada" 1s;
+			animation: "tada" 1s;
+		}
+	</style>
+</head>
+<body>
+					     <!--第二种使用动画库的方式 需要注意写 animated  -->
+	<div class="div1 flash animated"></div>
+	<div class="div2"></div>
+</body>
+</html>

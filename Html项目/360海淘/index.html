@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			
+			.wrap {
+				width: 100%;
+				margin: 0 auto;
+				background: #f2f2f2;
+			}
+			
+			header {
+				text-align: center;
+				width: 100%;
+				margin: 0 auto;
+				background: #fff;
+			}
+			
+			.title {
+				margin: 0 auto;
+				width: 1200px;
+				background: #fff;
+			}
+			
+			.logo {
+				margin: 30px auto;
+				text-align: left;
+			}
+			
+			nav {
+				width: 100%;
+				overflow: hidden;
+				text-align: left;
+			}
+			
+			nav .pic {
+				text-align: left;
+				display: inline-block;
+				margin-right: 40px;
+				vertical-align: bottom;
+			}
+			
+			.pic img {
+				text-align: left;
+				vertical-align: bottom;
+			}
+			
+			nav a {
+				display: inline-block;
+				margin: 20px 20px;
+				font-size: 16px;
+				color: #333;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			
+			nav a:hover {
+				color: #6de5e9;
+			}
+			
+			.line {
+				width: 100%;
+				height: 2px;
+				background: url(img/blue-bg.jpg) repeat-x;
+			}
+			section{
+				width: 1200px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.banner{
+				width: 260px;
+				height: 334px;
+				background: url(img/blue-bg.jpg) 0 0 no-repeat;
+				background-size: 100% 100%;
+				overflow: hidden;
+				float: left;
+			}
+			.country{
+				width: 83px;
+				height: 87px;
+				margin-top: 1px;
+				border-bottom: 1px solid #6de5e9;
+				border-right: 1px solid #6DE5E9;
+				display: inline-block;
+				color: #FFFFFF;
+				overflow: hidden;
+			}
+			.country:nth-child(3n){
+				border-right: none;
+			}
+			.country img{
+				margin: 0px 14px;
+				margin-bottom: 5px;
+				padding: 10px;
+				
+			}
+			.country a{
+				color: #FFFFFF;
+				float: left;
+				font-size: 12px;
+			}
+			.country span{
+				float: left;
+				margin-left: 30px;
+				text-align: center;
+				font-size: 12px;
+			}
+			.bottom{
+				margin-top: 5px;
+				overflow: hidden;
+			}
+			.visible{
+				width: 246px;
+				height: 46px;
+				background: #fff;
+				margin: 1px auto;
+				text-align: center;
+			}
+			.visible a{
+				display: inline-block;
+				width: 74px;
+				color: #29d6bf;
+				line-height: 46px;
+			}
+			.visible a span{
+				font-size: 12px;
+				font-weight: bold;
+			}
+			
+			.visible a span:hover{
+				color: #fff;
+				padding: 3px;
+				border-radius: 5px;
+				background: #29d6bf;
+			}
+			.m_banner{
+				float: left;
+			}
+			.r_banner{
+				float: right;
+			}
+			.content_wrap{
+				width: 1200px;
+				margin: 0 auto;
+				height: 600px;
+				margin-top: 50px;
+			}
+			.content_title{
+				width: 100%;
+				height: 30px;
+				background: url(img/sprite-bg.png) no-repeat;
+				background-position: 0 -500px;
+				text-align: right;
+			}
+			.content_title a{
+				color: #666;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			.content_text{
+				margin-top: 25px;
+				overflow: hidden;
+			}
+			.content_text a{
+				float: left;
+			}
+			.c_card{
+				display: inline-block;
+				margin: 0 10px 15px 0;
+				width: 224px;
+				height: 248px;
+				background: #FFFFFF;
+				border: 1px solid #eaeaea;
+				vertical-align: top;
+				margin-left: 4px;
+			}
+			.c_logo{
+				border-bottom: 1px dashed #EAEAEA;
+				text-align: center;
+			}
+			.mtext{
+				text-align: center;
+			}
+			.mtext h4{
+				line-height: 40px;
+			}
+			.mtext p{
+				font-size: 12px;
+				padding: 0 15px;
+				height: 54px;
+				margin-bottom: 5px;
+				line-height: 15px;
+				text-align: justify;
+			}
+			.b_yh{
+				text-align: center;
+				margin-top: 16px;
+				width: 100%;
+				height: 23px;
+				background: #f6f6f6;
+				padding-top: 9px;
+				font-size: 13px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="title">
+					<div class="logo"><img src="img/360-logo.png" alt="" /></div>
+					<nav>
+						<div class="pic">
+							<img src="img/citys-bg.png" alt="" />
+						</div>
+						<a href="#">国内推荐</a>
+						<a href="#">海淘精选</a>
+						<a href="#">转运公司</a>
+						<a href="#">信用卡</a>
+						<a href="#">海淘应用</a>
+					</nav>
+				</div>
+				<div class="line"></div>
+			</header>
+			<section>
+				<div class="banner">
+					<div class="top">
+						<div class="country">
+							<a href="#"><img src="img/America.png"/></a>
+							<span>北美</span>
+						</div>
+						<div class="country">
+							<a href="#"><img src="img/jp.png"/></a>
+							<span>日本</span>
+						</div>
+						<div class="country">
+							<a href="#"><img src="img/hongkong.png"/></a>
+							<span>港台</span>
+						</div>
+						<div class="country">
+							<a href="#"><img src="img/hanguo.png"/></a>
+							<span>韩国</span>
+						</div>
+						<div class="country">
+							<a href="#"><img src="img/Eurape.png"/></a>
+							<span>欧洲</span>
+						</div>
+						<div class="country">
+							<a href="#"><img src="img/Austrlia.png"/></a>
+							<span>澳洲</span>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="visible" style="border-radius: 10px 10px 0 0;">
+							<a href="#"><span>春季护肤</span></a>
+							<a href="#"><span>名品特惠</span></a>
+							<a href="#"><span>箱包专场</span></a>
+						</div>
+						<div class="visible">
+							<a href="#"><span>春季护肤</span></a>
+							<a href="#"><span>名品特惠</span></a>
+							<a href="#"><span>箱包专场</span></a>
+						</div>
+						<div class="visible" style="border-radius: 0px 0px 10px 10px;">
+							<a href="#"><span>春季护肤</span></a>
+							<a href="#"><span>名品特惠</span></a>
+							<a href="#"><span>箱包专场</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="m_banner">
+					<img src="img/banner.jpg"/>
+				</div>
+				<div class="r_banner">
+					<div><a href=""><img src="img/news-2.jpg" alt="" /></a></div>
+					<div><a href=""><img src="img/news-3.jpg" alt="" /></a></div>
+					<div><a href=""><img src="img/news-1.jpg" alt="" /></a></div>
+				</div>	
+			</section>
+			<div class="content_wrap">
+				<div class="content_title">
+					<a href="">更多></a>
+				</div>
+				<div class="content_text">
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-1.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-2.png"/>
+							</div>
+							<div class="mtext">
+								<h4>凤凰知音国航中银白金卡</h4>
+								<p>VISA，消费积累里程，免货币兑换手续费，美国、日本、德国亚马逊消费5%返现。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-3.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际信用卡</h4>
+								<p>VISA，有效期内免年费，申请方便，全球任意外币消费，0外汇兑换率，人民币还款。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-4.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-5.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-6.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-7.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-8.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-9.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="c_card">
+							<div class="c_logo">
+								<img src="img/card-10.png"/>
+							</div>
+							<div class="mtext">
+								<h4>全币种国际芯片卡</h4>
+								<p>VISA/万事达，终身免年费，EMV芯片保障安全，外币交易自动转换为人民币入账。</p>
+							</div>
+							<div class="b_yh">中国银行</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<footer></footer>
+		</div>
+	</body>
+
+</html>

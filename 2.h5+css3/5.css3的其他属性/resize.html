@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		textarea{
+			width: 200px;
+			height: 200px;
+			/*设置好宽高之后只能增大不能缩小*/
+			/*重新设置大小
+				none不允许设置大小
+				horizontal水平的
+				vertical垂直的
+				both
+			*/
+			resize:vertical;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			resize:both;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<textarea></textarea>
+	<div></div>
+</body>
+</html>

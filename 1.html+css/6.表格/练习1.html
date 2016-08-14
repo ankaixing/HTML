@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	table{
+			width: 700px;
+			height: 300px;
+
+			/*垂直对齐
+			vertical-align:top 上端对齐
+			vartical-align:middle;中间对齐
+			vartical-align:bottom;底部对齐 
+			*/
+			/*消除单元格之间的距离*/
+			border: 1px solid #fff;
+		}
+		td {
+			text-align: center;
+		}
+		th{
+			background-color: blue;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<table border="1" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">日期</th>
+		<th colspan="2">天气现象</th>
+		<th>气温</th>
+		<th>风向</th>
+		<th>风力</th>	
+	</tr>
+	<tr>
+		<td rowspan="2">22日星期五</td>
+		<td>白天</td>
+		<td><img src="./img/sun.png" alt=""></td>
+		<td>晴间多云</td>
+		<td style="color:orange">高温7°C</td>
+		<td>无持续风向</td>
+		<td>微风</td>		
+	</tr>
+	<tr>
+		<td>白天</td>
+		<td><img src="./img/sun.png" alt=""></td>
+		<td>晴间多云</td>
+		<td style="color:blue">高温7°C</td>
+		<td>无持续风向</td>
+		<td>微风</td>	
+	</tr>
+	<tr>
+		<td colspan="7" style="border-left:none;
+		border-right:none">
+			
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" style="color:red">22日星期五</td>
+		<td>白天</td>
+		<td><img src="./img/moon.png" alt=""></td>
+		<td>晴间多云</td>
+		<td style="color:orange">高温7°C</td>
+		<td>无持续风向</td>
+		<td>微风</td>	
+	</tr>
+	<tr>
+		<td>白天</td>
+		<td><img src="./img/sun.png" alt=""></td>
+		<td>晴间多云</td>
+		<td style="color:blue">高温7°C</td>
+		<td>无持续风向</td>
+		<td>微风</td>
+	</tr>
+</table>
+</body>
+</html>

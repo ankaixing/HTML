@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		table{
+			width: 700px;
+			height: 300px;
+
+			/*垂直对齐
+			vertical-align:top 上端对齐
+			vartical-align:middle;中间对齐
+			vartical-align:bottom;底部对齐 
+			*/
+			/*消除单元格之间的距离*/
+			border: 1px solid #fff;
+		}
+		td {
+			text-align: center;
+		}
+		th{
+			background-color: blue;
+			color: #fff;
+		}
+		/*td, th{
+				vertical-align: bottom;
+				border:2px solid #00d4df;
+			}*/
+			/*tbody是一个表格的主题内容，如果缺失，浏览器自动添加*/
+		
+	</style>
+</head>
+<body>
+	<!-- 表格 -->
+	<table border="1" cellspacing="0" cellpadding="10">
+		<caption>表格</caption>
+
+		<!-- 行 -->
+		<tr>
+			<!-- 列 
+				td单元格（默认垂直居中）
+				th单元格标题（默认居中加粗）
+			-->
+				<!-- 合并列 -->
+			<th colspan="2">1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<td>1</td>
+				<!-- 合并行 -->
+			<td rowspan="2" style="background-image: url(./img/list.png);">2</td>
+			<td colspan="2">3</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+</body>
+</html>

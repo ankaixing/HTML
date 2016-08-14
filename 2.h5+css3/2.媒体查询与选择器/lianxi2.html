@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		section{
+			width: 980px;
+			background-color: gray;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		div{
+			width: 230px;
+			height: 200px;
+			float: left;
+			background-color: red;
+			margin-top: 20px;
+			margin-right: 20px;
+		}
+		section div:nth-child(4n+1){
+			background-color: red;
+		}
+		section div:nth-child(4n+2){
+			background-color: blue;
+		}
+		section div:nth-child(4n+3){
+			background-color: pink;
+		}
+		section div:nth-child(4n){
+			background-color: yellow;
+		}
+		section div:nth-child(4n){
+			margin-right: 0;
+		}
+		@media only screen and (max-width: 980px) and (min-width: 641px){
+			section{
+				width: 640px;
+			}
+			section div{
+				margin :40px 45px 0;
+			}
+		}
+		@media screen and (max-width: 640px){
+			section{
+				width: 320px;
+			}
+			section div{
+				width: 140px;
+				height: 100px;
+				/*请之前样式*/
+				margin: 0;
+				margin-top: 20px;
+			}
+			section div:nth-child(2n+2){
+				margin-left: 40px;
+
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+</body>
+</html>

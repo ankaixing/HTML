@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+</head>
+	<style>
+	.wrap{
+		width: 940px;
+		margin: 0 auto;
+		background-color: #ccc;
+		padding: 20px;
+		overflow: hidden;
+	}
+	.div1{
+		width: 220px;
+		height: 120px;
+		background-color: red;
+		float: left;
+		margin-right: 20px;
+		margin-top: 10px;
+	}
+	.div_{
+		margin-right: 0;
+	}
+	@media screen and (max-width:640px){
+		.wrap{
+			width: 480px;
+			margin: 0 auto;
+			background-color: #ccc;
+			padding: 20px;
+			overflow: hidden;
+		}
+		.div1{
+		width: 220px;
+		height: 120px;
+		background-color: red;
+		float: left;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		}
+	}
+	@media screen and (max-width: 320px){
+		.wrap{
+			width: 320px;
+			margin: 0 auto;
+			background-color: #ccc;
+			padding-top: 20px;
+			overflow: hidden;
+		}
+		.div1{
+		width: 120px;
+		height: 60px;
+		background-color: red;
+		float: left;
+		margin-left: 5px;
+		margin-right: 20px;
+		margin-top: 20px;
+		}
+	}
+
+	</style>
+<body>
+	<div class="wrap">
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1 div_"></div>
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1 div_"></div>
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1 div_"></div>
+
+	</div>
+</body>
+</html>

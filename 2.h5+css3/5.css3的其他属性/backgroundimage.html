@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+			.div1{
+				width: 200px;
+				height: 200px;
+				background-image: url(./img/1副本.jpg);
+				border: 20px dashed red;
+				background-repeat: no-repeat;
+				padding: 20px;
+
+				/*裁剪  只有内容部分有背景图片*/
+				background-clip: content-box;
+				/*padding 让内容和padding区域存在背景图片*/
+				background-clip: padding-box;
+				/*border-box让padding content 都存在背景图片*/
+				background-clip: border-box;
+				/*background-position: -20px -20px;*/
+
+
+				/*设置原点的位置*/
+				/*把原点调整为padding-box*/
+				/*background-origin: padding-box;*/
+				/*把原点调整为border的左上角*/
+				/*background-origin: border-box;*/
+				/*把原点调整为content-box*/
+				  background-origin: content-box;
+
+			}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			background-color: yellow;
+		}
+		/*~选中同级的标签 在当前元素下面的同级标签*/
+		/*.div2~span{
+			background-color: red;
+		}*/
+		/*+同级的标签 紧贴着当前的标签的一个标签*/
+		.div2+span{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<span>span</span>
+		<div>1</div>
+		<div class="div2">2</div>
+		<span>span1</span>
+		<div>3</div>
+		<div>4</div>
+		<span>span2</span>
+		<div>5</div>
+	</div>
+	<div class="father">
+		<span></span>
+	</div>
+</body>
+</html>

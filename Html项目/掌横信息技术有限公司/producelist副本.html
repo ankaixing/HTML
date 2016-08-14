@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style type="text/css">
+		.wrap{
+			width: 1400px;
+			margin: 0 auto;
+		}
+		.nav{
+			width: 1400px;
+			height: 65px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: absolute;
+		}
+		.nav .nav_opacity{
+			width: 1400px;
+			height: 65px;
+			opacity: 0.4;
+			background-color: black;
+			position: fixed;
+		}
+		.nav .nav_toolbar{
+			width: 980px;
+			height: 65px;
+			margin: 0 auto;
+			position: fixed;
+			left: 0px;
+			right: 0px; 
+		}
+		.nav_toolbar img{
+			margin-top:10px;
+			float: left; 
+		}
+		.nav_toolbar_a{
+			margin-top:35px; 
+			float: right;
+		}
+		.nav_toolbar_a a{
+			width: 80px;
+			float: left;
+			text-decoration: none;
+			border-left: 2px solid #fff;
+			color: #fff;
+			text-align: center;
+		}
+		.nav_toolbar_a a:hover{
+			color: #20a3de;
+		}
+		#shouye{
+			border-left: none;
+		}
+		.head{
+			color: #ffffff;
+			height: 580px;
+			text-align: center;
+			overflow: hidden;
+			background-image: url(./img/bg.png);
+		}
+		.head h1{
+			margin-top: 200px;
+			font-size: 30px;
+		}
+		.head p{
+			margin-top: 50px;
+		}
+		.head p span{
+			border: 1px solid #fff;
+			font-size: 16px;
+			padding: 10px;
+			/*line-height: 20px;*/
+		}
+		.head p span:nth-child(1){
+			margin-right: 30px;
+		}
+		.head p span:nth-child(2){
+			margin-left: 30px;
+		}
+		.head .p_se{
+			margin-top: 20px;
+		}
+		.body_content{
+			width: 1400px;
+			margin-top: 35px;
+		}
+		.list_nav{
+			width: 400px;
+			margin: 0 auto;
+			height: 84px;
+			overflow: hidden;
+		}
+		.list_nav a{
+			float: left;
+			text-decoration: none;
+			text-align: center;
+			line-height: 82px;
+			color: black;
+			/*width: 84px;
+			height: 84px;*/
+		}
+		.list_nav a div:hover{
+			background-color: #20a3de;
+			color: #fff;
+		}
+		.list_nav a div{
+			width: 82px;
+			height: 82px;
+			border:1px solid #ccc;
+			/*margin-left: 20px;*/
+		}
+		.list_nav1{
+			
+			margin-left: 0px;
+		}
+		
+		.list_nav2{
+			
+			margin-left: 20px;
+		}
+		.list_nav3{
+
+			margin-left: 20px;
+		}
+		.list_nav4{
+			
+			margin-left: 20px;
+		}
+		.product_list{
+			width: 940px;
+			/*background-color: red;*/
+			margin: 0 auto;
+			margin-top: 35px;
+			position: relative;
+		}
+		.product_list div{
+			width: 219px;
+			height: 146px;
+			border: 2px solid #ccc;
+			/*background-image: url(./img/list.png);*/
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+		.product_list_01{
+			top: 0px;
+			background-image: url(./img/list.png);
+			left: 0px;
+		}
+		.product_list_02{
+			top: 0px;
+			background-image: url(./img/list2.png);
+			left: 239px;
+		}
+		.product_list_03{
+			top: 0px;
+			left: 478px;
+			background-image: url(./img/list3.png);
+		}
+		.product_list_04{
+			top: 0px;
+			left: 717px;
+			background-image: url(./img/list4.png);
+		}
+		.product_list_21{
+			top: 166px;
+			left: 0px;
+			background-image: url(./img/list4.png);
+		}
+		.product_list_22{
+			top: 166px;
+			left: 239px;
+			background-image: url(./img/list3.png);
+		}
+		.product_list_23{
+			top: 166px;
+			left: 478px;
+			background-image: url(./img/list2.png);
+		}
+		.product_list_24{
+			top: 166px;
+			left: 717px;
+			background-image: url(./img/list.png);
+		}
+		.product_list_31{
+			top: 332px;
+			left: 0px;
+			background-image: url(./img/list.png);
+		}
+		.product_list_32{
+			top: 332px;
+			left: 239px;
+			background-image: url(./img/list2.png);
+		}
+		.product_list_33{
+			top: 332px;
+			left: 478px;
+			background-image: url(./img/list3.png);
+		}
+		.product_list_34{
+			top: 332px;
+			left: 717px;
+			background-image: url(./img/list4.png);
+		}
+		.product_list_01hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+		}
+		.product_list_21hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 166px;
+			left: 0px;
+		}
+		.product_list_31hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 332px;
+			left: 0px;
+		}
+		.product_list_02hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 0px;
+			left: 239px;
+		}
+		.product_list_22hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 166px;
+			left: 239px;
+		}
+		.product_list_32hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 332px;
+			left: 239px;
+		}
+		.product_list_03hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 0px;
+			left: 478px;
+		}
+		.product_list_23hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 166px;
+			left: 478px;
+		}
+		.product_list_33hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 332px;
+			left: 478px;
+		}
+		.product_list_04hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 0px;
+			left: 718px;
+		}
+		.product_list_24hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 166px;
+			left: 718px;
+		}
+		.product_list_34hover{
+			color: #fff;
+			opacity: 0;
+			position: absolute;
+			top: 332px;
+			left: 717px;
+		}
+		.product_list_01hover span,
+		.product_list_21hover span, 
+		.product_list_02hover span,
+		.product_list_22hover span, 
+		.product_list_03hover span, 
+		.product_list_23hover span,
+		.product_list_04hover span,
+		.product_list_24hover span,
+		.product_list_31hover span,
+		.product_list_32hover span,
+		.product_list_33hover span,
+		.product_list_34hover span{
+			position: absolute;
+			display: block;
+			top: 60px;
+			left: 55px;
+			/*left: 50%;
+			right: 50%;*/
+		}
+		.product_list_01hover:hover,
+		.product_list_21hover:hover,
+		.product_list_31hover:hover,
+		.product_list_02hover:hover,
+		.product_list_22hover:hover,
+		.product_list_32hover:hover, 
+		.product_list_03hover:hover,
+		.product_list_23hover:hover, 
+		.product_list_04hover:hover,
+		.product_list_24hover:hover,
+		
+		.product_list_33hover:hover,
+		.product_list_34hover:hover{
+			width: 219px;
+			height: 146px;
+			background:#20a3de;
+			opacity: 1;
+			position: absolute;
+			transition:all 1s;
+		}
+
+		.bottom{
+			width: 100%;
+			height: 55px;
+			background-color: black;
+			margin-top: 800px;
+			text-align: center;
+			color: #fff;
+			
+		}
+		.bottom p{
+			font-size: 12px;
+			line-height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="nav">
+			<div class="nav_opacity"></div>
+			<div class="nav_toolbar">
+				<img src="./img/logo.gif" alt="">
+				<div class="nav_toolbar_a">
+					<a href="#" id="shouye">首页</a>
+					<a href="#">能力</a>
+					<a href="#">产品</a>
+					<a href="#">关于</a>
+				</div>
+			</div>
+		</div>
+		<div class="head">
+			<h1>广州掌恒---专注于数字化营销领域</h1>
+			<p><span>互联网、研发、运营</span>
+		       <span>网易、联想联合创始人</span>
+		    </p>
+		    <p>电商、IM通讯、O2O营销、移动OA办公</p>
+		    <p class="p_se">服务于地产、餐饮、广告、教育培训、医疗、服装等多个行业</p>
+		</div>
+		<div class="body_content">
+			<div class="list_nav">
+				<a href="">
+					<div class="list_nav1">
+						<span>平台</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="list_nav2">
+						<span>新媒体</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="list_nav3">
+						<span>设计</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="list_nav4">
+						<span>APP</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="product_list">
+			<div class="product_list_01"></div>
+			<div class="product_list_01hover">
+				<span>幕思寝家具网站</span>
+			</div>
+			<div class="product_list_21"></div>
+			<div class="product_list_21hover">
+				<span>hao123</span>
+			</div>
+			<div class="product_list_31"></div>
+			<div class="product_list_31hover">
+				<span>网易音乐</span>
+			</div>
+			<div class="product_list_02"></div>
+			<div class="product_list_02hover">
+				<span>腾讯QQ</span>
+			</div>
+			<div class="product_list_22"></div>
+			<div class="product_list_22hover">
+				<span>阿里巴巴</span>
+			</div>
+			<div class="product_list_32"></div>
+			<div class="product_list_32hover">
+				<span>阿里云</span>
+			</div>
+			<div class="product_list_03"></div>
+			<div class="product_list_03hover">
+				<span>火狐浏览器</span>
+			</div>
+			<div class="product_list_23"></div>
+			<div class="product_list_23hover">
+				<span>PhotoShop</span>
+			</div>
+			<div class="product_list_33"></div>
+			<div class="product_list_33hover">
+				<span>幕思寝家具网站</span>
+			</div>
+			<div class="product_list_04"></div>
+			<div class="product_list_04hover">
+				<span>幕思寝家具网站</span>
+			</div>
+			<div class="product_list_24"></div>
+			<div class="product_list_24hover">
+				<span>幕思寝家具网站</span>
+			</div>
+			<div class="product_list_34"></div>
+			<div class="product_list_34hover">
+				<span>幕思寝家具网站</span>
+			</div>
+		</div>
+	<div class="bottom">
+		<p>网站建设版权所有©2013广州掌恒信息技术有限公司</p>
+		<p>粤ICP备11086386COPYHGHT  2011  DESIGN  ALL RGHTS  RESEHVED</p>
+	</div>
+</body>
+</html>

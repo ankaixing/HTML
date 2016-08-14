@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/about.css"/>
+		<style type="text/css">
+			.content_p{
+				background: url(img/bg-content-inner.gif) repeat-y;
+			}
+			.connter_m{
+				padding: 40px;
+				overflow: hidden;
+			}
+			.m_ft{
+				float: left;
+				width: 610px;
+				padding-right: 25px;
+				
+			}
+			.m_rt{
+				float: left;
+				width: 270px;
+				padding-left: 35px;
+			}
+			.m_ft ul{
+				overflow: hidden;
+				list-style: none;
+			}
+			.m_ft ul li{
+				padding: 0 0 25px 0;
+				width: 183px;
+				float: left;
+				text-align: center;
+				margin: 0 30px 25px 0;
+			}
+			.m_ft ul li:nth-child(3n){
+				margin-right: 0px;
+			}
+			.m_ft ul li img{
+				border: 1px solid #DCDCDC;
+				padding: 4px;
+			}
+			.m_ft ul li h2{
+				color: red;
+				font-size: 14px;
+				margin: 10px 0;
+				font-family: arial;
+			}
+			.m_ft ul li p span{
+				font-size: 20px;
+				margin-bottom: 10px;
+				font-family: arial;
+			}
+			.m_ft ul li .button1{
+				margin-top: 10px;
+				color: #555555;
+				font-size: 12px;
+				font-family: arial;
+				border: 1px solid #eaeaea;
+				border-bottom: 1px solid #bfbfbf;
+				border-right: 1px solid #BFBFBF;
+				padding: 0 15px;
+				height: 30px;
+				line-height: 30px;
+				border-radius: 4px;
+				display: inline-block;
+			}
+			.m_ft ul li .button1:hover{
+				color: red;
+			}
+			.m_rt ul{
+				list-style: none;
+			}
+			.m_rt ul li{
+				margin: 0 0 40px 0;
+			}
+			.m_rt ul li h2{
+				font-family: arial;
+				color: #555555;
+				margin-bottom: 20px;
+				font-size: 16px;
+			}
+			.list_p{
+				padding: 0 0 8px 0;
+				margin: 0 0 15px 0;
+				overflow: hidden;
+				border-bottom: 1px solid #DCDCDC;
+			}
+			.list_p a{
+				float: left;
+			}
+			.list_p .list_info{
+				float: left;
+				margin-left: 20px;
+				font-family: arial;
+			}
+			.list_p .list_info p:nth-child(1){
+				color: orangered;
+			}
+			.list_p .list_info p:nth-child(2){
+				line-height: 20px;
+			}
+			.button_lis{
+				overflow: hidden;
+				padding-bottom: 30px;
+			}
+			.bt{
+				margin-top: 30px;
+				color: #555555;
+				font-size: 12px;
+				font-family: arial;
+				border: 1px solid #eaeaea;
+				border-bottom: 1px solid #bfbfbf;
+				border-right: 1px solid #BFBFBF;
+				padding: 0 15px;
+				height: 30px;
+				line-height: 30px;
+				border-radius: 4px;
+				display: inline-block;
+			}
+			.bt2{
+				margin-left: 20px;
+			}
+			form{
+				overflow: hidden;
+			}
+			form label{
+				width: 70px;
+				float: left;
+				padding: 5px 0 0 0;
+				font-family: arial;
+				color: #555555;
+			}
+			input[type="text"]{
+				width: 180px;
+				border: 1px solid #ECECEC;font-size: 11px;
+				padding: 8px 5px;
+				border-radius: 4px;
+			}
+			input[type="password"]{
+				width: 180px;
+				border: 1px solid #ECECEC;font-size: 11px;
+				padding: 8px 5px;
+				border-radius: 4px;
+			}
+			input[type="submit"]{
+				height: 32px;
+				color: #555555;
+				font-size: 12px;
+				font-family: arial;
+				border: 1px solid #EAEAEA;
+				border-bottom: 1px solid #BFBFBF;
+				border-right: 1px solid #BFBFBF;
+				line-height: 30px;
+				padding: 0 15px;
+				border-radius: 4px;
+				background: #BFBFBF;
+				float: left;
+				clear: both;
+			}
+			form a{
+				margin-top: 20px;
+				color: orangered;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<a href=""><img src="img/logo.png" alt="" /></a>
+				<nav>
+					<a href="index.html">首页</a>
+					<a href="about.html">ABOUT</a>
+					<a href="products.html">PRODUCTS</a>
+					<a href="">SERVICES</a>
+					<a href="">PORTFOLIO</a>
+					<a href="">BLOG</a>
+					<a class="a_ls" href="">CONTACT</a>
+				</nav>
+			</header>
+			<div class="ad_black">
+				<div class="shadow"></div>
+				<div class="ad_black_text">
+					<h1>ABOUT US</h1>
+					<span>This can be your Tagline or something you want.</span>
+				</div>
+			</div>
+			<div class="content_p">
+				<div class="connter_m">
+					<div class="m_ft">
+						<ul>
+							<li>
+								<img src="img/prod1.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod2.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod3.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod4.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod5.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod6.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod7.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod8.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+							<li>
+								<img src="img/prod9.jpg"/>
+								<h2>Toshiba Laptop24'</h2>
+								<p><span>$ 870.00</span></p>
+								<a class="button1" href="#">Add To Cart</a>
+							</li>
+						</ul>
+						
+					</div>
+					<div class="m_rt">
+						<ul>
+							<li>
+								<h2>SHOOPING CART</h2>
+								<div class="list_p">
+									<a href=""><img src="img/lp4.jpg"/></a>
+									<div class="list_info">
+										<p>New Printer XP</p>
+										<p>1x $ 950.00</p>
+									</div>
+									
+								</div>
+								<div class="list_p">
+									<a href=""><img src="img/lp5.jpg"/></a>
+									<div class="list_info">
+										<p>New Camera Digital 16MP</p>
+										<p>1x $ 950.00</p>
+									</div>
+									
+								</div>
+								<div class="list_p">
+									<h3>Subtotal: $1500.00</h3>
+									<div class="button_lis">
+										<a class="bt1 bt" href="">View Cart</a>
+										<a class="bt2 bt" href="">Checkout</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h2>CUSTOMER LOGIN</h2>
+								<form action="" method="post">
+									<label for="username">Username</label>
+									<input type="text" name="username" id="username" value="" />
+									<br />
+									<br />
+									<label for="password">password</label>
+									<input type="password" name="password" id="password" value="" />
+									<br /><br />
+									<input type="submit" value="Login"/>
+									<a href="">Lost Password?</a>
+								</form>
+							</li>
+							<li>
+								<h2>
+									PRODUCT CATEGORIES
+								</h2>
+								
+							</li>
+							<li>
+								<h2>SHOOPING CART</h2>
+								<div class="list_p">
+									<a href=""><img src="img/lp4.jpg"/></a>
+									<div class="list_info">
+										<p>New Printer XP</p>
+										<p>1x $ 950.00</p>
+									</div>
+									
+								</div>
+								<div class="list_p">
+									<a href=""><img src="img/lp5.jpg"/></a>
+									<div class="list_info">
+										<p>New Camera Digital 16MP</p>
+										<p>1x $ 950.00</p>
+									</div>
+								</div>
+								<div class="list_p">
+									<a href=""><img src="img/lp3.jpg"/></a>
+									<div class="list_info">
+										<p>New Camera Digital 16MP</p>
+										<p>1x $ 950.00</p>
+									</div>
+								</div>
+								<div class="list_p">
+									<a href=""><img src="img/lp2.jpg"/></a>
+									<div class="list_info">
+										<p>New Camera Digital 16MP</p>
+										<p>1x $ 950.00</p>
+									</div>
+								</div>
+							</li>
+						</ul>					
+					
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footer-pattern">
+					<div class="container940">
+						<div class="footer1">
+							<h2>Latest Articles</h2>
+							<ul>
+								<li>
+									<img src="img/pic5.jpg" alt="" />
+									<h4>Hellow World!</h4>
+									<span>Lorem ipsum dolor sit amet...</span>
+								</li>
+								<li>
+									<img src="img/pic6.jpg" alt="" />
+									<h4>Hellow World!</h4>
+									<span>Lorem ipsum dolor sit amet...</span>
+								</li>
+							</ul>
+						</div>
+						<div class="footer2">
+							<h2>Blogroll</h2>
+							<ul>
+								<li>
+									<a href="">Vivamus hendrerit venenatis quam</a>
+								</li>
+								<li>
+									<a href="">Aenean congue nisl in nibh</a>
+								</li>
+								<li>
+									<a href="">Proin tempus tempus orci eu imperdiet</a>
+								</li>
+								<li>
+									<a href="">Mauris interdum</a>
+								</li>
+								<li>
+									<a href="">Donec id turpis at risus</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer3">
+							<h2>Gallery</h2>
+							<ul>
+								<li><img src="img/pic7.jpg" alt="" /></li>
+								<li><img src="img/pic7.jpg" alt="" /></li>
+								<li><img src="img/pic7.jpg" alt="" /></li>
+								<li><img src="img/pic7.jpg" alt="" /></li>
+								<li><img src="img/pic7.jpg" alt="" /></li>
+								<li><img src="img/pic7.jpg" alt="" /></li>
+							</ul>
+						</div>
+						<div style="margin: 0;" class="footer4">
+							<h2>About Magnum</h2>
+							<p>Nulla interdum, enim eu dictum pellentesque, ipsum elit varius purus, et imperdiet odio magna lobortis purus.</p>
+							<p style="margin-top: 20px;">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed mauris at eros mollis ultricies vitae porta dui.</p>
+						</div>
+					</div>
+				</div>
+				<div class="after_footer">
+					<div class="last_footer">
+						<div class="text">
+							Copyright ©2012 Magnum. All Rights Reserved.
+						</div>
+						<div class="sn">
+							<a href=""><img src="img/twitter.png" /></a>
+							<a href=""><img src="img/youtube.png" /></a>
+							<a href=""><img src="img/lastfm.png" /></a>
+							<a href=""><img src="img/stumbleupon.png" /></a>
+							<a href=""><img src="img/fb.png" /></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		
+		</div>
+	</body>
+</html>

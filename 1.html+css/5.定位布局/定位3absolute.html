@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			height: 10000px;
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: absolute;
+			bottom: 0;
+			right: 0
+			/*absolute 绝对定位
+					1、脱离文档流
+					2、改变元素属性改变，不再是行块标签，而是定位元素
+					3、默认内容撑开大小
+					4、可以设置宽高以及其他css样式
+					5、基于祖宗辈中的定位元素定位，找到最近的一个定位元素，如果找不到就基于窗口定位
+					6、主要用于重叠
+
+			*/
+		}
+		.div2{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+		}
+		.father{
+			width: 500px;
+			height: 500px;
+			border: 1px solid #ff0;
+			position: relative;
+		}
+		.grandpa{
+			width: 800px;
+			height: 800px;
+			position: relative;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="grandpa">
+		<div class="father">
+			<div class="div1"></div>
+		</div>
+	</div>
+		<!-- <div class="div2"></div> -->
+</body>
+</html>

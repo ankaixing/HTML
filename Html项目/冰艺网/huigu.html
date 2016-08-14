@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .wrap{
+      width: 935px;
+      height: 2000px;
+      background-color: #ccc;
+      margin: 100px auto;
+      overflow: hidden;
+    }
+    .item{
+      float: left;
+      height: 207px;
+      background:url(./img/bg_case_f.png) no-repeat center bottom;
+      margin-top: 30px;
+      margin-right: 14px;
+
+    }
+    .item:nth-child(3n){
+      margin-right: 0;
+    }
+    .item_content{
+      width: 262px;
+      height: 148px;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 10px;
+      transition: all .3s linear;
+      position: relative;
+    }
+    .item_content:hover{
+      transform: translateY(-20px);
+    }
+    .item_content div{
+      background-color: rgba(0, 0, 0, 0);
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+    }
+    .item_content:hover div{
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 1;
+    }
+    .item_content div a{
+      display: block;
+      position: absolute;
+      width: 61px;
+      height: 61px;
+      background: red;
+      top: 50%;
+      margin-top: -30px;
+      transition: all .3s;
+    }
+    .item_content div a:nth-of-type(1){
+  background: url(img/readmore-icon.png) no-repeat;
+  left: 20px;
+  opacity: 0;
+  transition: all .3s;
+}
+.item_content div a:nth-of-type(2){
+  background: url(img/zoom-icon.png) no-repeat;
+  right: 20px;
+  opacity: 0;
+  transition: all .3s
+}
+.item:hover .item_content div a:nth-of-type(1){
+  transform: translate(40px);
+  opacity: 1
+}
+.item:hover .item_content div a:nth-of-type(2){
+  transform: translate(-40px);
+  opacity: 1
+}
+  </style>
+</head>
+<body>
+    <div class="wrap">
+          <div class="item">
+            <div class="item_content">
+              <img src="./img/1.png" alt="">
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_content">
+              <img src="./img/1.png" alt="">
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_content">
+              <img src="./img/1.png" alt="">
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_content">
+              <img src="./img/1.png" alt="">
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_content">
+              <img src="./img/1.png" alt="">
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_content">
+              <img src="./img/1.png" alt="">
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

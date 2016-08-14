@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.wrap{
+			width:400px;
+			height: 400px;
+			background-color: yellow;
+			border: 1px solid red;
+			/*repeat重复
+			no-repeat不重复
+			repeat-x横向重复
+			repeat-y纵向重复
+			*/
+			background-image: url("./img/1.png");
+			background-repeat: no-repeat;
+			/*position 位置
+				x的距离 y轴的距离
+				不仅可以写数值还可以写方位
+
+			*/
+			background-position: 50% 50%;
+			/*background-position: center center;*/
+			/*背景图片的大小*/
+			background-size: 200px;
+			font-size: 50px;
+			overflow-x: auto;
+			border-radius: 10px;
+
+			/*阴影
+			x轴偏移
+			y轴偏移
+			阴影模糊
+			阴影大小
+			阴影颜色
+			inset内部阴影
+			*/
+
+			/*box-shadow: 10px -60px 40px black inset;*/
+			/*过渡*/
+			transition:all 2s;
+		}
+		/*伪类*/
+		/*hover*/
+		.wrap:hover{
+			background-color:red;
+			box-shadow: 10px 15px 40px black;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">张天其，原名张帅，1982年7月9日出生于黑龙江大庆市，毕业于北京电影学院表演系2002级高职甲班，中国内地男演员。
+2000年加入“动感男孩”组合，并担任主唱，2003年单飞。2004年首次出演电视剧《梧桐相思雨》。2006年出演民国情感剧《换子成龙》[1-2]  。2009年领衔主演家庭情感剧《爱没有错》[3]  。2011年出演民国苦情剧《郎本无情》[4-5]  和家族情感剧《千金》[6-7]  。2012年主演爱情剧《再爱我一次》[8-9]  。
+2013年出演年代爱情剧《雅典娜女神》[10]  。2014年与潘粤明、陈键锋共同主演古装剧《儒林外史》[11]  。</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+		.scree{
+			width: 1400px;
+			background-color: #ffffff;
+			text-align: center;
+			height: 600px;
+
+		}
+		.title{
+			padding-top: 20px;
+			background-color: #ffffff;
+			text-align: center;
+			margin-top: 20px;
+			width: 980px;
+			margin-right: auto;
+			margin-left: auto;
+
+		}
+		.title h3{
+			position: relative;
+			top: -25px;
+		}
+		.icon{
+			width: 980px;
+			margin-top:58px;
+			margin-right: auto;
+			margin-left: auto;
+			overflow: hidden; 
+		}
+		.icon ul li div{
+			height: 266px;
+			width: 222px;
+			float: left;
+			margin-left: 10px;
+			display: inline-block;
+			text-align: center;
+		}
+		.icon ul li{
+			display: inline-block;
+			text-align: center;
+		}
+		.icon ul li .icon1{
+			margin-left: 0px;
+		}
+		.icon li h3{
+			margin-top: 20px;
+			font-weight: 20px;
+			color: #8c8c8c;
+		}
+		.icon li p{
+			margin-top: 28px;
+			color: #c0c0c0;
+			text-align: center;
+			line-height: 25px;
+			padding: 0 35px;
+		}
+		.ad_center{
+			width: 1400px;
+			height:129px;
+			margin-top: 115px;
+			text-align: center;
+			background-image: url(../img/ad_center.png);
+		}
+		.ad_center .ad_center_world{
+			width: 540px;
+			height: 129px;
+			margin: 0 auto;
+		}
+		.ad_center .ad_center_world p{
+			color: #ffffff;
+			font-size: 10px;
+			display: inline-block;
+			margin-top: 50px;
+			font-family: "Arial";
+		}
+		.ad_center_world p span{
+			position: relative;
+		}
+		.ad_center_world p span:nth-child(1){
+			top: -25px;
+			left: -410px;
+		}
+		.ad_center_world p span:nth-child(2){
+			top: 10px;
+			right: -130px;
+		}

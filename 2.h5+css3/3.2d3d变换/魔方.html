@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		html{
+			perspective:1000px;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+		}
+		body{
+			position: relative;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+
+		}
+		body:hover{
+			-webkit-transition: all 10s;
+			-o-transition: all 10s;
+			transition: all 10s;
+			-webkit-transform: rotateY(3600deg);
+			-ms-transform: rotateY(3600deg);
+			-o-transform: rotateY(3600deg);
+			transform: rotateY(3600deg);
+		}
+		.father{
+			width: 200px;
+			height: 200px;
+			top: 50%;
+			left: 50%; 
+			margin-top: -100px;
+			margin-left: -100px;
+			position: absolute;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			-webkit-transform: rotateX(45deg) rotateZ(45deg);
+			-ms-transform: rotateX(45deg) rotateZ(45deg);
+			-o-transform: rotateX(45deg) rotateZ(45deg);
+			transform: rotateX(45deg) rotateZ(45deg);
+		}
+		.father div{
+			width: 200px;
+			height: 200px;
+			font-size: 50px;
+			text-align: center;
+			line-height: 200px;
+			position: absolute;
+			opacity: 0.5;
+			top: 0;
+			left: 0;
+		}
+		.father div:nth-child(1){
+			background: yellow;
+			-webkit-transform: translateZ(100px);
+			-ms-transform: translateZ(100px);
+			-o-transform: translateZ(100px);
+			transform: translateZ(100px);
+		}
+		.father div:nth-child(6){
+			-webkit-transform: translateZ(-100px);
+			-ms-transform: translateZ(-100px);
+			-o-transform: translateZ(-100px);
+			transform: translateZ(-100px);
+		}
+		.father div:nth-child(2){
+			background: orange;
+			-webkit-transform: rotateY(90deg) translateZ(100px);
+			-ms-transform: rotateY(90deg) translateZ(100px);
+			-o-transform: rotateY(90deg) translateZ(100px);
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.father div:nth-child(4){
+			background: pink;
+			-webkit-transform: rotateY(90deg) translateZ(-100px);
+			-ms-transform: rotateY(90deg) translateZ(-100px);
+			-o-transform: rotateY(90deg) translateZ(-100px);
+			transform: rotateY(90deg) translateZ(-100px);
+		}
+		.father div:nth-child(3){
+			background: blue;
+			-webkit-transform: rotateX(90deg) translateZ(-100px);
+			-ms-transform: rotateX(90deg) translateZ(-100px);
+			-o-transform: rotateX(90deg) translateZ(-100px);
+			transform: rotateX(90deg) translateZ(-100px);
+		}
+		.father div:nth-child(5){
+			background: red;
+			-webkit-transform: rotateX(90deg) translateZ(100px);
+			-ms-transform: rotateX(90deg) translateZ(100px);
+			-o-transform: rotateX(90deg) translateZ(100px);
+			transform: rotateX(90deg) translateZ(100px);
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+</body>
+</html>

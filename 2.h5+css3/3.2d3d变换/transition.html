@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<style>
+	 	.div1{
+	 		width: 200px;
+	 		height: 200px;
+	 		background-color: red;
+	 		/*x5内核 腾讯公司 qq浏览器 微信*/
+			/*前缀 谷歌内核 chrome safari 360极速浏览器 猎豹*/
+	 		/*-webkit-transition:all 10s;*/
+			/*前缀 mozilla firfox火狐浏览器*/
+			/*-moz-transition:all 10s;*/
+			/*前缀 微软 ie*/
+			/*-ms-transition:all 10s;*/
+			/*前缀 欧朋浏览器 opera 转入谷歌*/
+			/*-o-transition:all 10s;*/
+			/*前缀*/
+			/*transition-delay:all 10s;*/
+			
+			/*property 属性*/
+			/*-webkit-transition:  width 1s, background 2s;
+			-o-transition:  width 1s, background 2s;
+			transition:  width 1s, background 2s;*/
+			
+			/*属性 trp*/
+			/*-webkit-transition-property: height;
+			-o-transition-property: height;
+			transition-property: height;*/
+			/*时间  trdu*/
+			/*-webkit-transition-duration: 1s;
+			-o-transition-duration: 1s;
+			transition-duration: 1s;*/
+			/*过度效果  trtf   linear匀速的线性的  ease先慢一点 再变快 后慢一点*/
+			/*ease-in 先慢在快*/
+			/*-webkit-transition-timing-function: ease-out;
+			-o-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;*/
+
+
+			/*复合属性 属性 过度时间 过度效果 延迟时间*/
+			-webkit-transition: width 3s cubic-bezier(0.96, 0.15, 0, 1.17), height 2s cubic-bezier(1,-0.45, 1,-0.34),background 4s, border-radius 3s;
+			-o-transition: width 3s cubic-bezier(0.96, 0.15, 0, 1.17), height 2s cubic-bezier(1,-0.45, 1,-0.34),background 4s, border-radius 3s;
+			transition: width 3s cubic-bezier(0.96, 0.15, 0, 1.17), height 2s cubic-bezier(1,-0.45, 1,-0.34),background 4s, border-radius 3s;
+	 	}	
+		.div1:hover{
+			/*width: 500px;*/
+			height: 500px;
+			width: 500px;
+			border-radius: 500px;
+			background-color: blue;
+		}
+	</style>
+<body>
+	<div class="div1"></div>
+</body>
+</html>

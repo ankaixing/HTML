@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@-webkit-keyframes move{
+			from{
+				-webkit-transform: rotateZ(0);
+				-ms-transform: rotateZ(0);
+				-o-transform: rotateZ(0);
+				transform: rotateZ(0);
+			}
+			25%{
+				-webkit-transform: rotateZ(-25deg);
+				-ms-transform: rotateZ(-25deg);
+				-o-transform: rotateZ(-25deg);
+				transform: rotateZ(-25deg);
+			}
+			75%{
+				-webkit-transform: rotateZ(25deg);
+				-ms-transform: rotateZ(25deg);
+				-o-transform: rotateZ(25deg);
+				transform: rotateZ(25deg);
+			}
+			100%{
+				-webkit-transform: rotateZ(0);
+				-ms-transform: rotateZ(0);
+				-o-transform: rotateZ(0);
+				transform: rotateZ(0);
+			}
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			background: red;
+
+			-webkit-animation: "move" 1s linear infinite;
+			-o-animation: "move" 1s linear infinite;
+			animation: "move" 1s linear infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+.search_bar{
+			margin: 0 auto;
+			width: 960px;
+			height: 130px;
+			background-image: url(/Users/dllo/Desktop/work/100度/img/search_bg.png);
+			background-repeat: no-repeat;
+			overflow: hidden;
+			margin-top: 20px;
+		}
+		.search_butn{
+			width: 416px;
+			height: 27px;
+			margin-left: 227px;
+			overflow: hidden;
+		}
+		.search_butn a{
+			float: left;
+			text-decoration: none;
+			color: black;
+		}
+		.search_butn div{
+			width: 80px;
+			height: 27px;
+			text-align: center;
+			line-height: 27px;
+			background: #f9f9f9;
+		}
+		.search_butn .sousuo{
+			background: #e21c01;
+			background-repeat: no-repeat;
+			color: #fff;
+			border-radius: 8px 8px 0 0;
+			border: 1px solid #f8d0bf;
+			border-bottom: none;
+		}
+		.search_butn .dizhi{
+			margin-left: 2px;
+			border-radius: 8px 8px 0 0;
+			border: 1px solid #f8d0bf;
+		}
+		.search_butn .youhuiquan{
+			margin-left: 2px;
+			border-radius: 8px 8px 0 0;
+			border: 1px solid #f8d0bf;
+		}
+		.search_butn .quanwen{
+			margin-left: 2px;
+			border-radius: 8px 8px 0 0;
+			border: 1px solid #f8d0bf;
+		}
+		.search_butn .shiping{
+			margin-left: 2px;
+			border-radius: 8px 8px 0 0;
+			border: 1px solid #f8d0bf;
+		}
+		.search_input{
+			width: 484px;
+			height:30px;
+			float: left;
+			margin-left: 227px;
+			margin-top: 20px;
+			overflow: hidden;
+
+		}
+		.search_input input{
+			border: none;
+			width: 392px;
+			height: 30px;
+			float: left;
+			border-radius: 8px;
+			outline: none;
+		}
+		.search_input button{
+			border: none;
+			border-radius: 11px;
+			width: 61px;
+			height: 23px;
+			float: left;
+			margin-left: 20px;
+			margin-top: 3px;
+			background: url(/Users/dllo/Desktop/work/100度/img/search_btn.jpg);
+			outline: none;
+		}
+		.search_tj{
+			margin-top: 13px;
+			float: left;
+			margin-left: 20px;
+			width: 202px;
+			height: 30px;
+		}
+		.search_tj p{
+			line-height: 20px;
+			font-size: 12px;
+			color: #fff;
+		}
+		.hot_p{
+			width: 686px;
+			height: 30px;
+			margin-left: 227px;
+			margin-top: 68px;
+			line-height: 30px;
+			overflow: hidden;
+		}
+		.hot_p span{
+			float: left;
+		}
+		.hot_p p{
+			margin-top: 8px;
+			margin-left: 20px;
+			float: left;
+			font-size: 12px;
+			font-weight: 700;
+		}
+		.hot_p p a{
+			color: red;
+			text-decoration: none;
+		}
+		.hot_p b{
+			color: #ccc;
+		}
+		.hot_ud{
+			width: 7px;
+			height: 16px;
+			float: left;
+			margin-left: 20px;
+			margin-top: -8px;
+		}
+		.hot_up{
+			width: 7px;
+			height: 4px;
+		}
+		.hot_down{
+			margin-top: 8px;
+			width: 7px;
+			height: 4px;
+		}

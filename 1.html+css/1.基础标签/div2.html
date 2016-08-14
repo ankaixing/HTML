@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 2.内部引入样式 -->
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background: yellow;
+		}
+
+	</style>
+	<!-- 3外部引入样式 -->
+<link rel="stylesheet" type="text/css" href="div.css">
+</head>
+<body>
+	<!-- 1.内联样式(行间) -->
+	<!-- 优先级：谁针对性强，听谁的 -->
+	<div style="background:red;">1</div>
+	<div>2</div>
+	<div>3</div>
+</body>
+</html>

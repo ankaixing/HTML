@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	h3 h1{
+		font-weight: normal;
+		margin-left:20px
+	}
+		.wrap{
+			width: 1200px;
+			height: 2000px;
+			margin-left:auto;
+			margin-right:auto;
+			border-left: 1px solid #DCDCDC; 
+			box-shadow: 5px 0 5px #8B8989;
+			 
+		}
+		.wrap .head{
+			width: 1170px;
+			height: 90px;
+			margin-right: auto;
+			margin-left: auto;
+			background: #DCDCDC;
+		}
+		.wrap .head .head_left{
+			float: left;
+			width: 371px;
+			height: 90px;
+		}
+		.scree{
+			margin-right: auto;
+			margin-left: auto;
+			width: 1170px;
+			height: 2000px;
+		}
+		.scree .nav{
+			width: 1170px;
+			height: 60px;
+		}
+		.scree .nav li{
+			float: left;
+			margin-left: 65px;
+			line-height: 60px;
+			list-style: none;
+			text-align: center;
+			color: #c4c4c4;
+		}
+		.scree .nav ul li a{ 
+			color:#666;
+			font-weight: bold; 
+			font-size:18px; 
+			text-decoration:none;
+		}
+		.scree .nav ul li span{ 
+			display:block; 
+			position:absolute; 
+			width:0px; 
+			height:0px; 
+			background:#ff0000; 
+			top:155px; 
+			left:50%;}
+		.scree .scree_left{
+			width: 180px;
+			height: 2000px;
+			background:#DCDCDC;
+			float: left;
+		}
+		.scree .scree_center{
+			width: 810px;
+			height: 2000px;
+			float: left;
+
+		}
+		.scree .scree_center h1{
+			font-weight: normal;
+			margin-top: 15px;
+		}
+		.scree .scree_center .scree_center_button{
+			width: 810px;
+			height: 60px;
+			line-height: 70px;
+		}
+		.scree .scree_center .scree_center_button button:nth-child(1){
+			width: 90px;
+			height:31px;
+			background-image: url(button1.jpg);
+		}
+		.scree .scree_center .scree_center_button button:nth-child(2){
+			width: 90px;
+			height:31px;
+			margin-left: 10px;
+			background-image: url(button2.jpg);
+		}
+		.scree .scree_right{
+			width: 180px;
+			height: 2000px;
+			background:#DCDCDC;
+			float: left;
+		}
+		.scree_center_anli{
+			width: 180px;
+			height: 290px;
+		}
+		.scree_center_anli_border{
+			height: 205px;
+			width: 770px;
+			border: 1px dashed #000000;
+			background:#DCDCDC;
+			margin-left: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body style="padding:0px;margin:0px;background:#F5F5F5">
+	<div class="wrap">
+		<div class="head">
+			<div calss="head_left">
+				<img src="head.jpg" alt="">
+			</div>
+
+		</div>
+		<div class="scree">
+			<!-- 导航条 -->
+			<div class="nav">
+			<ul>
+			<li><a href='#'>HTML/CSS</a><span></span></li>
+			<li><a href='#'>JavaScript</a><span></span></li>
+			<li><a href='#'>Server Side</a><span></span></li>
+			<li><a href='#'>ASP.NET</a><span></span></li>
+			<li><a href='#'>XML</a><span></span></li>
+			<li><a href='#'>Web Services</a><span></span></li>
+			<li><a href='#'>Web Building</a><span></span></li>
+			</ul>	
+			</div>
+			<!-- 左分栏 -->
+			<div class="scree_left"></div>
+			<!-- 中分栏 -->
+			<div class="scree_center">
+				<h1>HTML 简介</h1>
+				<hr style="margin-top:-20px">
+				<div class="scree_center_button">
+					<button></button>
+					<button></button>
+				</div>
+				<hr style="height:1px;border:none;border-top:1px solid #555555;" />
+				<div class="scree_center_anli">
+					<h3 style="margin-left:20px">实例</h3>
+					<div class="scree_center_anli_border">
+						<p>&lt;html&gt;</p>
+							<p>&lt;body&gt;</p>
+							<p>&lt;h1&gt;My First Heading&lt;/h1&gt;</p>
+							<p>&lt;p&gt;My first paragraph.&lt;/p&gt;</p>
+							<p>&lt;/body&gt;</p>
+							<p>&lt;/html&gt;</p>
+					</div>
+				</div>
+				<button style="background-image: url(btn.jpg);width:85px;height:33px;margin-top:-20px;margin-left:20px;"></button>
+				<hr style="height:1px;border:none;border-top:1px solid #555555;" />
+				<h3 style="margin-left:20px">HTML 标签</h3>
+				<p style="margin-left:20px">HTML 标记标签通常被称为 HTML 标签 (HTML tag)。</p>
+				<ul>
+					<li>HTML 标签是由尖括号包围的关键词，比如 &lt;html&gt;</li>
+					<li>HTML 标签是由尖括号包围的关键词，比如 &lt;html&gt;</li>
+					<li>HTML 标签是由尖括号包围的关键词，比如 &lt;html&gt;</li>
+					<li>HTML 标签是由尖括号包围的关键词，比如 &lt;html&gt;</li>
+				</ul>
+				<hr style="height:1px;border:none;border-top:1px solid #555555;" />
+				<h3>HTML 文档 = 网页</h3>
+				<ul>
+					<li>HTML 文档描述网页</li>
+					<li>HTML 文档描述网页</li>
+					<li>HTML 文档描述网页</li>
+				</ul>
+				<p style="margin-left:20px">Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容：</p>
+				<div class="scree_center_anli_border">
+						<p>&lt;html&gt;</p>
+							<p>&lt;body&gt;</p>
+							<p>&lt;h1&gt;My First Heading&lt;/h1&gt;</p>
+							<p>&lt;p&gt;My first paragraph.&lt;/p&gt;</p>
+							<p>&lt;/body&gt;</p>
+							<p>&lt;/html&gt;</p>
+					</div>
+				<h5 style="margin-left:20px">例子解释</h5>
+				<ul>
+					<li>&lt;html&gt; 与 &lt;/html&gt; 之间的文本描述网页</li>
+					<li>&lt;html&gt; 与 &lt;/html&gt; 之间的文本描述网页</li>
+					<li>&lt;html&gt; 与 &lt;/html&gt; 之间的文本描述网页</li>
+				</ul>
+				<hr>
+				<div class="scree_center_button">
+					<button></button>
+					<button></button>
+				</div>
+				<hr style="height:1px;border:none;border-top:1px solid #555555;" />
+			</div>
+			
+
+			<!-- 右分栏 -->
+			<div class="scree_right"></div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.nav li').hover(function(){
+		$('span',this).stop().css('height','2px');
+		$('span',this).animate({
+			left:'0',
+			width:'50%',
+			right:'0'
+		},200);
+	},function(){
+		$('span',this).stop().animate({
+			left:'50%',
+			width:'0'
+		},200);
+	});
+});
+</script>
+</body>
+</html>

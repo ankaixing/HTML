@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+	body{
+		background: #f2f2f2;
+		color: rgb(173, 173, 173);
+	}
+		.head_wrap{
+			position: fixed;
+			width: 100%;
+			height: 92px;
+			z-index: 1;
+			opacity: 0.7;
+			/*background-color: black;*/
+		}
+		.head_opacity{
+			width: 100%;
+			height:75px;
+			opacity: 0.4;
+			background-color:black;
+			position: fixed; 
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.head{
+			/*background: rgb(0,0,0);*/
+			height: 75px;
+			width: 100%;
+			opacity: 0.4px;
+			filter:alpha(opacity=75);
+			padding-top:15px;
+			position: fixed;
+			background: black;
+			box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+			text-align: center;
+			padding-bottom: 10px; 
+		}
+		.logo{
+			height: 44px;
+			width: 136px;
+		}
+		.bar{
+			position: absolute;
+			width: 100%;
+			color: #8e8e8e;
+			font-size: 0.9em;
+			bottom: 5px;
+			font-family:HUM521L;
+		}
+		.nav{
+			width: 80%;
+			text-align: center; 
+			margin: auto;
+			min-width: 320px;
+		}
+		.nav .active{
+			color: #ffffff;
+		}
+		.nav a{
+			text-decoration: none;
+			color: #898989;
+			margin-left: 11%
+		}
+		.nav .fistNav{
+			margin-left: 0;
+		}
+		.wrap{
+			position: relative;
+			width: 100%;
+			min-width: 320px;
+			overflow: hidden;
+		}
+		.center{
+			width: 75%;
+			margin: 0 auto;
+			position: relative;
+			margin-top: 130px;
+			min-width: 320px;
+			max-width: 1200px;
+			overflow: hidden;
+		}
+		.message{
+			width: 75%;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		.message p{
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			padding: 20px 0;
+			color: #545454;
+			line-height: 25px;
+		}
+		.parner{
+			margin: 2% auto;
+			width:100%;
+			overflow: hidden;
+			text-align: center;
+		}
+		.parner span img{
+			width: 5%;
+			margin: 0 10px;
+			min-width: 38px;
+		}
+		.swiper{
+			width: 100%;
+			overflow: hidden;
+		}
+		.ad_1{
+			width: 100%;
+			height: 386px;
+		}
+		.device{
+			width: 100%;
+			position: relative;
+		}
+		.device .arrow_left{
+			background: url(./img/left.png) 0 0 no-repeat; 
+			background-size: 100% 100%;
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			margin-top: -15px;
+			width: 17px;
+			height: 54px;
+			opacity: 0.5;
+			filter:alpha(opacity=50);
+		}
+		.device .arrow_right{
+			background: url(./img/right.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			margin-top: -15px;
+			width: 17px;
+			height: 54px;
+			opacity: 0.5;
+			/*filter:alpha(opacity=50);*/
+		}
+		.swiper_toobar{
+			width: 100%;
+			height: 35px;
+			background-color: black;
+			position: absolute;
+			text-align: center;
+			bottom: 0px;
+			opacity: 0.3;
+		}
+		.swiper_toobar_word{
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			bottom: 10px;
+			color: #ffffff;
+		}
+		.conten{
+			width: 100%;
+			overflow: hidden;
+		}
+		.article {
+			width: 31%;
+			margin-top:40px;
+			margin-right: 12px;
+			margin-left: 14px;
+			text-align: center;
+			float: left;
+			position: relative;
+			
+		}
+		.article img{
+			border-radius: 5px;
+			width: 100%;
+		}
+		.article p{
+			overflow: hidden;
+			width: 100%;
+			height: 151px;
+			border-radius: 5px;
+			background-color: black;
+			position: absolute;
+			color: #fff;
+			text-align: center;
+			line-height: 151px;
+			font-size: 20px;
+			top: 0;
+			left: 0;
+			opacity: 0.4;
+			z-index: -1
+		}
+		.article:hover p{
+			z-index: 1;
+		}
+		.con{
+			width: 31%;
+			border-radius: 5px;
+			background: #fff;
+			float: left;
+			margin: 2% 1%;
+			overflow: hidden;
+			color: #959595;
+			text-decoration: none;
+			box-shadow: 2px 2px 2px #e3e3e3;
+			position: relative;
+		}
+		
+		.con img{
+			width: 100%;
+			float: left;
+		}
+		.con p{
+			clear: both;
+			text-align: center;
+			line-height: 5px;
+			/*font-family: HUM521L;*/
+			font-size: 0.98em;
+			white-space:nowrap;
+		}
+		.bottom{
+			background: #e0e0e0;
+			position: relative;
+			width: 100%;
+			margin-top: 40px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-shadow:1px 1px 1px #fff;
+			color:#666666;
+			overflow: hidden;
+		}
+		.bottom_left{
+			vertical-align: top;
+			float: left;
+		}
+		.bottom_right{
+			border-left: 1px solid #bcbcbc;
+			float: right;
+		}
+		.bottom_left, .bottom_right{
+			width: 49%;
+			display: inline-block;
+		}
+		.link{
+			float: right;
+			height: 50px;
+		}
+		.link a{
+			width: 30px;
+			float: left;
+			margin-left: 6px;
+		}
+		.link1{
+			margin-left: 0;
+		}
+		.link a img{
+			width: 100%;
+		}
+		.contack{
+			margin-left: 3%;
+			font-size: 0.75em;
+		}
+		.contack .contact_logo{
+			width: 143px;
+			margin-bottom: 10px;
+		}
+		.contact_logo img{
+			width: 100%;
+		}
+		.contack p{
+			margin-bottom: 5px;
+		}
+		.content_word{
+			position: absolute;
+			top: -100px;
+			left: 50%;
+			right: 50%;
+		}
+		.content_word ul li{
+					}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head_wrap">
+		<div class="head_opacity"></div>
+		<div class="head">
+			<img class="logo" src="./img/title2.png" alt="">
+			<div class="bar">
+				<div class="nav">
+					<a class="fistNav active" href="#">HOME</a>
+					<a href="#">WORK</a>
+					<a href="#">CONTACT</a>
+					<a href="#">JOIN US</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="wrap">
+		<div class="center">
+			<div class="swiper">
+				<div class="device" style="height:386px;">
+					<a class="arrow_left" href="#"></a>
+					<a class="arrow_right" href="#"></a>
+					<img class="ad_1" src="./img/ad_1.jpg" alt="">
+				</div>
+				<div class="swiper_toobar"></div>
+				<div class="swiper_toobar_word">
+					<p>UC浏览器《快于一念，因你不凡》</p>
+				</div>
+			</div>
+		</div>
+		<div class="message">
+			<p>Infini Studio (映纷创意)是一家创意机构，专注于动画影像的创意与设计。我们使用设计、绘画、动画、特效及多种创新形式(Motion Graphics)，以动态视觉语言对品牌与内容进行创意呈现。并由动画导演、设计师、插画师、三维艺术家共同协作完成。服务的领域包括广告、影视、交互H5、新媒体等。</p>
+			<div class="parner">
+				<span><img src="./img/1.jpg" alt=""></span>
+				<span><img src="./img/2.jpg" alt=""></span>
+				<span><img src="./img/3.jpg" alt=""></span>
+				<span><img src="./img/4.jpg" alt=""></span>
+				<span><img src="./img/5.jpg" alt=""></span>
+				<span><img src="./img/6.jpg" alt=""></span>
+				<span><img src="./img/7.jpg" alt=""></span>
+				<span><img src="./img/8.jpg" alt=""></span>
+				<span><img src="./img/9.jpg" alt=""></span>
+				<span><img src="./img/10.jpg" alt=""></span>
+				<span><img src="./img/11.jpg" alt=""></span>
+				<span><img src="./img/12.jpg" alt=""></span>
+				<span><img src="./img/13.jpg" alt=""></span>
+				<span><img src="./img/14.jpg" alt=""></span>
+			</div>
+			<div class="conten">
+				<a href="#" class="con">
+					<img src="./img/a1.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>腾讯</li>
+								<li>腾讯网络媒体峰会——叙事迁移</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a2.jpg" alt="">
+					<p style="color:rgb(173,173,173);">腾讯网络媒体峰会</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a3.jpg" alt="">
+					<p style="color:rgb(173,173,173);">未来媒体峰会</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a4.jpg" alt="">
+					<p style="color:rgb(173,173,173);">有利网</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a5.jpg" alt="">
+					<p style="color:rgb(173,173,173);">今天就看今日头条</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a6.jpg" alt="">
+					<p style="color:rgb(173,173,173);">北安新闻</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a7.jpg" alt="">
+					<p style="color:rgb(173,173,173);">易车影业</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a8.jpg" alt="">
+					<p style="color:rgb(173,173,173);">为什么我们要回家过年</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a9.jpg" alt="">
+					<p style="color:rgb(173,173,173);">开窍APP</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a10.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a11.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a12.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a13.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a14.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a15.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a16.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a17.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a18.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a19.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a20.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a21.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a22.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a23.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a24.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a25.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a26.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a27.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="con">
+					<div class="work" style="height:146px;display:none;">
+						<div class="work_wrap" style="height:146px;">
+							<ul>
+								<li>网易</li>
+								<li>网易520游戏礼包H5</li>
+							</ul>
+						</div>
+					</div>
+					<img src="./img/a28.jpg" alt="">
+					<p style="color:rgb(173,173,173);">网易520游戏礼包</p>
+				</a>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom_left">
+				<div class="link">
+					<a href="#" class="link1">
+						<img src="./img/contact1.jpg" alt="">
+					</a>
+					<a href="#" class="link2">
+						<img src="./img/contact2.jpg" alt="">
+					</a>
+					<a href="#" class="link3">
+						<img src="./img/contact3.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="bottom_right">
+				<div class="contack">
+					<div class="contact_logo">
+						<img src="./img/footer_logo.jpg" alt="">
+					</div>
+					<p>Infini Studio | 映纷创意</p>
+					<p>北京市朝阳北路107号院</p>
+					<p>Email : infinistudio@foxmail.com</p>
+					<p>QQ : 7585917</p>
+					<p>weibo : @InfiniStudio</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

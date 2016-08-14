@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.div1 {
+  width: 400px;
+  height: 400px;
+  margin-left: 400px;
+  background-color: #1ba2db;
+}
+.p1 {
+  background-color: #1ba2db;
+}
+.p2 {
+  background-color: #1ba2db;
+}
+.border-radius {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 20px solid red;
+}
+.div1 {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 20px solid red;
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -o-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+}
+.header {
+  background-color: yellow;
+}
+.header p {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: green;
+  text-align: center;
+  font-size: 24px;
+}
+.header p a {
+  color: #FFFF00;
+  font-size: 50px;
+  text-decoration: none;
+}
+.header p a:nth-child(2) {
+  color: #fff;
+}
+.header p:hover {
+  font-size: 100px;
+}
+.div1 {
+  width: 800px;
+  height: 800px;
+}
+/*# sourceMappingURL=less1.css.map */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.wrap{
+		width: 980px;
+		height: 1000px;
+		background-color: yellow;
+		margin: 0 auto;
+	}
+	.xgg{
+		/*position的值决定了是哪种定位*/
+		position: fixed;
+		/*fixed  基于浏览器窗口定位  可以写像素和百分比*/
+		/*absolute*/
+		/*relative*/
+		width: 200px;
+		height: 400px;
+		background-color: pink;
+		top: 100px;
+		/*left: 0px;*/
+		right: 50px;
+		/*fixed总结
+				1、脱离文档流
+				2、元素属性改变不再是行块标签
+				3、默认内容撑开大小
+				4、可以设置宽高，以及其他css样式
+				5、基于浏览器窗口进行定位
+				6、一般用于小工具，小广告
+		*/
+	}
+	.xgg1{
+		position: fixed;
+		width: 200px;
+		height: 400px;
+		top: 100px;
+		left: 50px;
+		background: red;
+	}
+		
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		
+	</div>
+		<div class="xgg">
+			暑假快到了，约上你的基友第二根半价。
+		</div>
+		<div class="xgg1">
+			暑假快到了，约上你的基友第二根半价。
+		</div>
+</body>
+</html>

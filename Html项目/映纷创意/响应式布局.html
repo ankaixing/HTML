@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.wrap{
+			max-width: 100%;
+			margin: 0 auto;
+			background-color: #f2f2f2;
+		}
+		.nav_head{
+			position: relative;
+			height: 92px;
+			width: 100%;
+			text-align: center;
+			position: fixed;
+			background-color: rgb(0,0,0);
+			opacity: 0.75;
+			filter:alpha(opacity=75);
+			box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+			z-index:1;
+		}
+		nav{
+			width: 100%;
+			height: 92px;
+			background-color: #000;
+		}
+
+		nav img{
+			width: 143px;
+			height: 44px;
+		}
+		.nav_conten{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.nav_meau{
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+			position: absolute;
+			bottom: 10%;
+		}
+		.nav_meau a:nth-child(1){
+			margin-left: 0;
+		}
+		.nav_meau a {
+			color: #fff;
+			margin-left: 11%;
+			text-decoration: none;
+			font-size: 0.9em;
+		}
+		section{
+			width: 1200px;
+			margin: 0 auto;
+			margin-top: 2%;
+			min-width: 640px;
+		}
+		section img{
+			width: 100%;
+		}
+		.info{
+			width: 100%;
+			margin-top: 1%;
+			border-top: 2px solid #e5e5e5;
+			text-indent: 2em;
+		}
+		.info p{
+			margin-top: 3%;
+			line-height: 1.5em;
+			font-size: 1.2em;
+			font-weight: bolder;
+			color: rgb(102,102,102);
+		}
+		.banner{
+			margin-top: 1%;
+			border-top: 2px solid #e5e5e5;
+			text-align: center;
+		}
+		.banner img{
+			width: 5%;
+			margin: 0 10px;
+			min-width: 38px;
+		}
+		.ad_wrap{
+			overflow: hidden;
+			width: 100%;
+		}
+		.item{
+		width: 30%;
+		float: left;
+		text-decoration: none;
+		border-radius: 5px;
+		margin-top: 40px;
+		overflow: hidden;
+		position: relative;
+		margin-right: 5%;
+		}
+		.item img{
+			width: 100%;
+			float: left;
+		}
+		.item_title{
+		text-align: center;
+		color: gray;
+		background-color: white;
+		float: left;
+		width: 100%;
+		padding: 5px 0;
+		}
+		.item_hover{
+			position: absolute;
+			width: 100%;
+			bottom: 25px;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0);
+			text-align: center;
+		}
+		.item_hover p{
+			color: rgba(255,255,255,0);
+			font-size: 1.5em;
+		}
+		.item_hover p:nth-child(1){
+			margin-top: 60px;
+		}
+		.item_hover:hover{
+			background-color: rgba(0,0,0,0.75);
+		}
+		.item_hover:hover p{
+			color: rgba(255,255,255,1);
+		}
+		.item:hover>p{
+			color: rgba(0,0,0,1);
+		}
+	.item:nth-child(3n){
+		margin-right: 0;
+	}
+	footer{
+		background: #e0e0e0;
+		position: relative;
+		width: 100%;
+		margin-top: 40px;
+		padding-top: 10px;
+		text-shadow: 1px 1px 1px #fff;
+		color: #666;
+		overflow: hidden;
+	}
+	.footer_left{
+		float: left;
+		vertical-align: top;
+	}
+	.footer_left, .footer_right{
+		width: 49%;
+		display: inline-block;
+	}
+	.link{
+		float: right;
+		height: 50px;
+	}
+	.link a{
+		width: 30px;
+		float: left;
+		margin-left: 6px;
+	}
+	.link a img{
+		width: 100%;
+	}
+	.footer_right{
+		border-left: 1px solid #bcbcbc;
+		float: right;
+	}
+	.contact{
+		margin-left: 3%;
+		font-size: 0.75em;
+	}
+	.foot_logo{
+		width: 143px;
+		margin-bottom: 10px;
+	}
+	.foot_logo img{
+		width: 100%;
+	}
+	.contact p{
+		margin-bottom: 5px;
+	}
+	@media only screen and (max-width: 1370px){
+		.info p{
+			margin-top: 3%;
+			line-height: 1.5em;
+			font-size: 0.9em;
+			font-weight: bolder;
+			color: rgb(102,102,102);
+		}
+		.item{
+		width: 30%;
+		float: left;
+		text-decoration: none;
+		border-radius: 5px;
+		margin-top: 40px;
+		overflow: hidden;
+		position: relative;
+		margin-right: 5%;
+		}
+		.item:nth-child(3n){
+		margin-right: 0;
+		}
+		.item_hover{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				bottom: 25px;
+				background-color: rgba(0,0,0,0);
+			}
+			.item_hover p{
+				color: rgba(255,255,255,0);
+				font-size: 2em;
+			}
+			.item_hover p:nth-child(1){
+				margin-top: 60px;
+			}
+	}
+	@media only screen and (max-width: 1200px) and (min-width: 641px){
+		section{
+			width: 75%;
+			margin: 0 auto;
+			margin-top: 2%;
+		}
+		.info p{
+			margin-top: 3%;
+			line-height: 1.5em;
+			font-size: 0.9em;
+			font-weight: bolder;
+			color: rgb(102,102,102);
+		}
+		.item_hover{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			bottom: 25px;
+			background-color: rgba(0,0,0,0);
+		}
+		.item_hover p{
+			color: rgba(255,255,255,0);
+			font-size: 1em;
+		}
+		.item_hover p:nth-child(1){
+			margin-top: 60px;
+		}
+	}
+	@media only screen and (max-width: 640px) and (min-width: 481px){
+			section{
+				width: 75%;
+				margin: 0 auto;
+				margin-top: 2%;
+				min-width: 400px;
+			}
+			.item_title{
+				text-align: center;
+				color: gray;
+				background-color: white;
+				float: left;
+				width: 100%;
+				padding: 5px 0;
+				font-size: 0.9em
+			}
+			.item_hover{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				bottom: 24px;
+				background-color: rgba(0,0,0,0);
+			}
+			.item_hover p{
+				color: rgba(255,255,255,0);
+				font-size: 0.9em;
+			}
+			.item_hover p:nth-child(1){
+				margin-top: 22px;
+			}
+	}
+		
+	@media only screen and (max-width: 480px){
+		section{
+			width: 75%;
+			margin-top: 2%;
+			min-width: 400px;
+		}
+		.item{
+			width: 48%;
+			float: left;
+			text-decoration: none;
+			border-radius: 5px;
+			margin: 0;
+			/*margin-top: 40px;*/
+			overflow: hidden;
+			position: relative;
+			margin-right: 3.3%;
+			margin-top: 40px;
+			/*margin-right: 5%;*/
+		}
+		.item:nth-child(3n){
+			margin-right: 3.3%;
+		}
+		.item:nth-child(2n){
+		margin-right: 0;
+		}
+		.nav_meau a {
+			color: #fff;
+			margin-left: 11%;
+			text-decoration: none;
+			font-size: 0.8em;
+		}
+		.item_hover{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				bottom: 25px;
+				background-color: rgba(0,0,0,0);
+			}
+			.item_hover p{
+				color: rgba(255,255,255,0);
+				font-size: 0.9em;
+			}
+			.item_hover p:nth-child(1){
+				margin-top: 33px;
+			}
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<nav>
+			<div class="nav_head">
+				<img src="./img/title2.png" alt="">
+				<div class="nav_conten">
+					<div class="nav_meau">
+						<a href="#">HOME</a>
+						<a href="#">WORK</a>
+						<a href="#">CONTACT</a>
+						<a href="#">JOIN US</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section>
+			<img src="1.png" alt="">
+			<div class="info">
+				<p>Infini Studio (映纷创意)是一家创意机构，专注于动画影像的创意与设计。我们使用设计、绘画、动画、特效及多种创新形式(Motion Graphics)，以动态视觉语言对品牌与内容进行创意呈现。并由动画导演、设计师、插画师、三维艺术家共同协作完成。服务的领域包括广告、影视、交互H5、新媒体等。
+			</p>
+			</div>
+			<div class="banner">
+				<img src="./img/1.jpg" alt="">
+				<img src="./img/2.jpg" alt="">
+				<img src="./img/3.jpg" alt="">
+				<img src="./img/4.jpg" alt="">
+				<img src="./img/5.jpg" alt="">
+				<img src="./img/6.jpg" alt="">
+				<img src="./img/7.jpg" alt="">
+				<img src="./img/8.jpg" alt="">
+				<img src="./img/9.jpg" alt="">
+				<img src="./img/10.jpg" alt="">
+				<img src="./img/11.jpg" alt="">
+				<img src="./img/12.jpg" alt="">
+				<img src="./img/13.jpg" alt="">
+				<img src="./img/14.jpg" alt="">
+
+			</div>
+			<div class="ad_wrap">
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a1.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a2.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a3.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a4.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a5.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a6.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a7.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a8.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a9.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a10.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a11.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a12.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a13.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a14.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a15.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a16.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a17.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+				<a href="#" class="item">
+					<div class="item_hover">
+						<p>网易</p>	
+						<p>网易520游戏礼包H5</p>
+					</div>
+					<img src="./img/a18.jpg" alt="">
+					<p class="item_title">网易520游戏礼包</p>
+				</a>
+			</div>
+		</section>
+		<footer>
+			<div class="footer_left">
+				<div class="link">
+					<a href=""><img src="./img/contact1.jpg" alt=""></a>
+					<a href=""><img src="./img/contact2.jpg" alt=""></a>
+					<a href=""><img src="./img/contact3.jpg" alt=""></a>
+				</div>
+			</div>
+			<div class="footer_right">
+				<div class="contact">
+					<div class="foot_logo"><img src="./img/footer_logo.jpg" alt=""></div>
+					<p>Infini Studio | 映纷创意</p>
+					<p>北京市朝阳北路107号院</p>
+					<p>Email : infinistudio@foxmail.com</p>
+					<p>QQ : 7585917</p>
+					<p>weibo : @InfiniStudio</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

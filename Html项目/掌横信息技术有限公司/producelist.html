@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style type="text/css">
+		.wrap{
+			width: 1400px;
+			margin: 0 auto;
+		}
+		.nav{
+			width: 1400px;
+			height: 65px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: absolute;
+		}
+		.nav .nav_opacity{
+			width: 1400px;
+			height: 65px;
+			opacity: 0.4;
+			background-color: black;
+			position: fixed;
+		}
+		.nav .nav_toolbar{
+			width: 980px;
+			height: 65px;
+			margin: 0 auto;
+			position: fixed;
+			left: 0px;
+			right: 0px; 
+		}
+		.nav_toolbar img{
+			margin-top:10px;
+			float: left; 
+		}
+		.nav_toolbar_a{
+			margin-top:35px; 
+			float: right;
+		}
+		.nav_toolbar_a a{
+			width: 80px;
+			float: left;
+			text-decoration: none;
+			border-left: 2px solid #fff;
+			color: #fff;
+			text-align: center;
+		}
+		#shouye{
+			border-left: none;
+		}
+		.head{
+			color: #ffffff;
+			height: 580px;
+			text-align: center;
+			overflow: hidden;
+			background-image: url(./img/bg.png);
+		}
+		.head h1{
+			margin-top: 200px;
+			font-size: 30px;
+		}
+		.head p{
+			margin-top: 50px;
+		}
+		.head p span{
+			border: 1px solid #fff;
+			font-size: 16px;
+			padding: 10px;
+			/*line-height: 20px;*/
+		}
+		.head p span:nth-child(1){
+			margin-right: 30px;
+		}
+		.head p span:nth-child(2){
+			margin-left: 30px;
+		}
+		.head .p_se{
+			margin-top: 20px;
+		}
+		.body_content{
+			width: 1400px;
+			margin-top: 35px;
+		}
+		.list_nav{
+			width: 396px;
+			margin: 0 auto;
+			height: 84px;
+			overflow: hidden;
+		}
+		.list_nav a{
+			float: left;
+			text-decoration: none;
+			text-align: center;
+			line-height: 82px;
+			/*margin: 0 auto;*/
+			color: black;
+			/*width: 84px;
+			height: 84px;*/
+		}
+		.list_nav a div:hover{
+			background-color: #20a3de;
+			color: #fff;
+		}
+		.list_nav1{
+			margin: 0 auto;
+			width: 82px;
+			height: 82px;
+			border:1px solid #ccc; 
+		}
+		
+		.list_nav2{
+			width: 82px;
+			height: 82px;
+			border:1px solid #ccc;
+			margin-left: 20px;
+		}
+		.list_nav3{
+			width: 82px;
+			height: 82px;
+			border:1px solid #ccc;
+			margin-left: 20px;
+		}
+		.list_nav4{
+			width: 82px;
+			height: 82px;
+			border:1px solid #ccc;
+			margin-left: 20px;
+		}
+		.product_list{
+			width: 980px;
+			margin: 0 auto;
+			margin-top: 35px;
+			overflow: hidden;
+
+		}
+		.product1{
+			margin: 0 auto;
+			width: 218px;
+			height: 146px;
+			border:2px solid #ccc;
+			margin-left: 20px;
+			margin-top: 20px;
+			float: left;
+			background-image: url(./img/list.png);
+		}
+		.product_no{
+			margin-left: 0;
+		}
+		.product_hover{
+			margin: 0 auto;
+			width: 220px;
+			height: 148px;
+			position: absolute;
+			margin-top: 20px;
+			top: 1px;
+			left: 1px;
+			background:#20a3de;
+			opacity: 0;
+
+		}
+		.product_hover:hover{
+			opacity: 1;
+		} 
+		.list1{
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="nav">
+			<div class="nav_opacity"></div>
+			<div class="nav_toolbar">
+				<img src="./img/logo.gif" alt="">
+				<div class="nav_toolbar_a">
+					<a href="#" id="shouye">首页</a>
+					<a href="#">能力</a>
+					<a href="#">产品</a>
+					<a href="#">关于</a>
+				</div>
+			</div>
+		</div>
+		<div class="head">
+			<h1>广州掌恒---专注于数字化营销领域</h1>
+			<p><span>互联网、研发、运营</span>
+		       <span>网易、联想联合创始人</span>
+		    </p>
+		    <p>电商、IM通讯、O2O营销、移动OA办公</p>
+		    <p class="p_se">服务于地产、餐饮、广告、教育培训、医疗、服装等多个行业</p>
+		</div>
+		<div class="body_content">
+			<div class="list_nav">
+				<a href="">
+					<div class="list_nav1">
+						<span>平台</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="list_nav2">
+						<span>新媒体</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="list_nav3">
+						<span>设计</span>
+					</div>
+				</a>
+				<a href="">
+					<div class="list_nav4">
+						<span>APP</span>
+					</div>
+				</a>
+
+			</div>
+		</div>
+		<div class="product_list">
+			<div class="list1">
+				<div class="product1 product_no"></div>
+				<div class="product_hover"><span>慕思家居网店</span></div>
+				<div class="product1"></div>
+				<div class="product_hover"><span>慕思家居网店</span></div>
+				<div class="product1"></div>
+				<div class="product_hover"><span>慕思家居网店</span></div>
+				<div class="product1"></div>
+			</div>
+			<div class="list2">
+				<div class="product1 product_no"></div>
+				<div class="product1"></div>
+				<div class="product1"></div>
+				<div class="product1"></div>
+			</div>
+			<div class="list3">
+				<div class="product1 product_no"></div>
+				<div class="product1"></div>
+				<div class="product1"></div>
+				<div class="product1"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

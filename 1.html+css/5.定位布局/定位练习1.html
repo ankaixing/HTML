@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.div1{
+			width:800px;
+			height: 800px;
+			background-color: #c8c8c8;
+			position: absolute;
+			margin-left: 50px;
+			z-index: 2;
+		}
+		.div2{
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			z-index: 10;
+			/*元素的堆叠顺序*/
+			/*值越大越在上面
+			只能兄弟比较不能越级
+			*/
+			
+		}
+		.div3{
+			width: 500px;
+			height: 500px;
+			background-color: blue;
+			position:absolute;
+			top: 40px;
+			left: 40px;
+			
+		}
+		.div4{
+			width: 500px;
+			height: 500px;
+			background-color: green;
+			position:absolute;
+			top: 60px;
+			left: 60px;
+		}
+
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.brother{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			background-color: yellow;
+			right: 0px;
+			top: 0px;
+			z-index: 3
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2">
+			
+		</div>
+		<div class="div3">
+				
+		</div>
+		<div class="div4">
+					
+		</div>
+	</div>
+	<div class="brother"></div>
+</body>
+</html>

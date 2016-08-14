@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.div1{
+				width: 200px;
+				height: 200px;
+				background: red;
+				margin: 100px 0 0 100px;
+				border: 50px solid green;
+				/*外廓 不占大小*/
+				outline: 50px solid yellow;
+				/*外廓线偏移   
+				 外廓 包括外廓的偏移都不占文本流 可以把它想象成等位
+				 * */
+				outline-offset: 50px;
+				outline-style:dotted;
+			}
+			.div2{
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			
+		</div>
+		<div class="div2">
+			
+		</div>
+	</body>
+</html>

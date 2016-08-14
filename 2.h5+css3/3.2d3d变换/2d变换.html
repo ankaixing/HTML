@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		body{
+			position: relative;
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: absolute;
+			margin: 0 auto;
+			top: 50%;
+			left: 50%;
+			margin-left: -100px;
+			margin-top: -100px;
+			/*transition 过渡*/
+			-webkit-transition: all 10s;
+			-o-transition: all 10s;
+			transition: all 10s;
+
+			/*基准点*/
+			-webkit-transform-origin: 100px 0;
+			-moz-transform-origin: 100px 0;
+			-ms-transform-origin: 100px 0;
+			-o-transform-origin: 100px 0;
+			transform-origin: 100px 0;
+		}
+		.div1:hover{
+			/*transform 运动  translate平移*/
+			/*-webkit-transform: translate(100px, 200px);
+			-ms-transform: translate(100px, 200px);
+			-o-transform: translate(100px, 200px);
+			transform: translate(100px, 200px);*/
+			/*沿着x轴运动*/
+			/*-webkit-transform: translateX(200px);
+			-ms-transform: translateX(200px);
+			-o-transform: translateX(200px);
+			transform: translateX(200px);*/
+			/*沿着y轴运动*/
+			/*-webkit-transform: translateY(200px);
+			-ms-transform: translateY(200px);
+			-o-transform: translateY(200px);
+			transform: translateY(200px);*/
+
+			/*缩放 scale()*/
+			/*-webkit-transform: scale(2);
+			-ms-transform: scale(2);
+			-o-transform: scale(2);
+			transform: scale(2);
+
+			-webkit-transform: scaleX.1) translate(30px,40px);
+			-ms-transform: scaleX(.1) translate(30px,40px);
+			-o-transform: scaleX(.1) translate(30px,40px);
+			transform: scaleX(.1) translate(30px,40px);*/
+
+			/*旋转*/
+			/*-webkit-transform: rotate(99999999999999999999999999deg);
+			-ms-transform: rotate(99999999999999999999999999deg);
+			-o-transform: rotate(99999999999999999999999999deg);
+			transform: rotate(99999999999999999999999999deg);
+
+			-webkit-transform: rotateY(9999999999999999999999999deg);
+			-ms-transform: rotateY(9999999999999999999999999deg);
+			-o-transform: rotateY(9999999999999999999999999deg);
+			transform: rotateY(9999999999999999999999999deg);*/
+			/*倾斜*/
+			-webkit-transform: skewY(30deg);
+			-ms-transform: skewY(30deg);
+			-o-transform: skewY(30deg);
+			transform: skewY(30deg);
+
+			/*-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);*/
+
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+</body>
+</html>

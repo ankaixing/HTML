@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/animant.css" />
+    <title></title>
+    <style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+   html, body{
+    	height: 100%;
+    	width: 100%;
+    }
+    	.wrap{
+    		width: 100%;
+    		height: 100%;
+    	}
+    	.background{
+    		width: 100%;
+    		height: 100%;
+    		background: url(img/bg.png) no-repeat;
+    		background-size: 100% 100%;
+    		max-width: 750px;
+    		min-width: 320px;
+    		padding-top: 10%;
+    		perspective: 1000px;
+    		-webkit-transform-style: preserve-3d;
+    	}
+    	.content{
+    		width: 82.53333333%;
+    		height: 51.36523978%;
+    		margin: 0 auto;
+    		position: relative;
+    	}
+    	.sj_lt{
+    		width: 47.33441034%;
+    		height: 100%;
+    		background: url(img/red.png) no-repeat;
+    		background-size: 100% 100%;
+    		-webkit-animation: "red_sj" 1s linear;
+    	}
+    	.sj_top{
+    		width: 100%;
+    		height: 100%;
+    		background: url(img/blue.png);
+    		background-size: 100% 100%;
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+    		-webkit-animation: "blue_sj" 1s linear;
+    	}
+    	.sj_bottom{
+    		width: 100%;
+    		height: 59.61538462%;
+    		background: url(img/yellow.png);
+    		background-size: 100% 100%;
+    		position: absolute;
+    		bottom: 0;
+    		-webkit-animation: "yellow_sj" 1s linear;
+    	}
+    	.big_d{
+    		width: 21.48626817%;
+    		height: 30.01605136%;
+    		background: url(img/blue_D_2.png) no-repeat;
+    		background-size: 100% 100%;
+    		position: absolute;
+    		top: 35.34294872%;
+    		-webkit-animation: "big_D" 2s linear;	
+    	}
+    	.sim_d{
+    		position: absolute;
+    		width: 12.5%;
+    		height: 20.5%;
+    		background: url(img/D_R_1.png) no-repeat;
+    		background-size: 100% 100%;
+    		top:40.2%;
+    		left: 4.5%;
+    		-webkit-animation: "big_D" 2.2s linear;
+    	}
+    	.hui_r{
+    		width: 22.1%;
+    		height: 50.1%;
+    		position: absolute;
+    		background: url(img/hui_j_2.png) no-repeat;
+    		background-size: 100% 100%;
+    		top:24%;
+    		left:26%;
+  		-webkit-animation: "hui_sj" 2s linear;
+    	}
+    	.red_d{
+    		width: 8.1%;
+    		height: 8.54878%;
+    		background: url(img/red_d_2.png);
+    		background-size:100% 100% ;
+    		position: absolute;
+    		top: 42%;
+    		left: 30%;
+    		-webkit-animation: "big_D" 2.2s linear;
+    	}
+    	.lan_er{
+    		width: 69.05769%;
+    		height: 42.06410256%; 
+    		position: absolute;
+    		background: url(img/blue_bg_2.jpg) no-repeat;
+    		background-size: 100% 100%;
+    		bottom: 0%;
+    		right: 0%;
+    		-webkit-animation: "big_D" 2s linear;
+    	}
+    	.lt_tiao{
+    		width: 25.5%;
+    		height: 86.25897436%;
+    		position: absolute;
+    		background: url(img/green_t_2.png) no-repeat;
+    		background-size: 100% 100%;
+    		left: 42%;
+    		top: 0%;
+    		-webkit-animation: "lt_tiao" 2s linear;
+    		
+    	}
+    	.hui_tiao{
+    		width: 12.181524%;
+    		height: 52.92435897%;
+    		position: absolute;
+    		top: 0%;
+    		right:32%;
+    		background: url(img/hui_t_2.png) no-repeat;
+    		background-size:100% 100% ;
+    		-webkit-animation: "hui_tiao" 2s linear;
+    	}
+    	.big_R{
+    		width: 41.193679%;
+    		height: 62.0846%;
+    		background: url(img/R_d_1.png) no-repeat;
+    		background-size: 100% 100%;
+    		position: absolute;
+    		top: 38%;
+    		left: 26%;
+    		
+    		-webkit-animation: "big_R" 1s linear backwards 1s;
+    	}
+    	.big_E{
+    		width: 13.45218801%;
+    		height: 29.00641026%;
+    		position: absolute;
+    		background: url(img/E_1.png) no-repeat;
+    		background-size: 100% 100%;
+    		top: 39%;
+    		left: 42%;
+    		-webkit-animation: "big_R" 1s linear backwards 1.3s;
+    	}
+    	.big_M{
+    		width: 43.83954619%;
+    		height: 51.72435897%;
+    		position: absolute;
+    		background: url(img/M_d_1.png);
+    		background-size: 100% 100%;
+    		top: 34%;
+    		right: 0%;
+    		-webkit-animation: "big_R" 1s linear backwards 1.6s;
+    	}
+    	.m{
+    		width: 13%;
+    		height: 14%;
+    		background: url(img/m.png) no-repeat;
+    		background-size: 100% 100%;
+    		position: absolute;
+    		bottom: 0%;
+    		left: 31%;  	
+    		-webkit-animation: "m" 1s linear backwards 1.5s;	
+    	}
+    	.a{
+    		width: 13%;
+    		height: 14%;
+    		background: url(img/A.png) no-repeat;
+    		background-size: 100% 100%;
+    		position: absolute;
+    		bottom: 0%;
+    		left: 44%;
+    		-webkit-animation: "m" 1s linear backwards 1.7s;	 
+    	}
+    	.k{
+    		width: 13%;
+    		height: 14%;
+    		background: url(img/k.png) no-repeat;
+    		background-size: 100% 100%;
+    		position: absolute;
+    		bottom: 0%;
+    		left: 57%;
+    		-webkit-animation: "m" 1s linear backwards 1.9s;	 
+    	}
+    	.e{
+    		width: 13%;
+    		height: 14%;
+    		background: url(img/e.png) no-repeat;
+    		background-size: 100% 100%;
+    		position: absolute;
+    		bottom: 0%;
+    		right: 16%;
+    		-webkit-animation: "m" 1s linear backwards 2.1s;	 
+    	}
+    	.r{
+    		width: 15%;
+    		height: 14%;
+    		background: url(img/R_s_1.png) no-repeat;
+    		background-size: 100% 100%;
+    		position: absolute;
+    		bottom: 0%;
+    		right: 0%;
+    		-webkit-animation: "m" 1s linear backwards 2.3s;	 
+    	}
+  
+    	.footer{
+    		width: 82.53333333%;
+    		height: 30%;
+    		margin: 0 auto;
+    		position: relative;
+    		-webkit-transform-style: preserve-3d;
+    	}
+	@-webkit-keyframes big_R{
+		from{
+			opacity: 0;
+			/*-webkit-transform: translate3d();*/
+			-webkit-transform: scale3d(3, 3, 3);
+             transform: scale(.3, .3, .3);
+		}
+		to{
+			opacity: 1;
+		}
+	}
+	@-webkit-keyframes m{
+		from{
+			opacity: 0;
+			-webkit-transform: translateY(200px);
+		}
+		to{
+			opacity: 1;
+			-webkit-transform: translateY(0px);
+		}
+	}
+    </style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="background">
+			<div class="stra1"></div>
+			<div class="stra1"></div>
+			<div class="stra2"></div>
+			<div class="stra2"></div>
+			<div class="stra3"></div>
+			<div class="stra3"></div>
+			<div class="content">
+				<div class="sj_lt"></div>
+				<div class="big_d"></div>
+				<div class="sim_d"></div>
+				<div class="hui_r"></div>
+				<div class="red_d"></div>
+				<div class="sj_top"></div>
+				<div class="hui_tiao"></div>
+				<div class="sj_bottom">
+				</div>
+				<div class="lan_er"></div>
+				<div class="m"></div>
+						<div class="a"></div>
+						<div class="k"></div>
+						<div class="e"></div>
+						<div class="r"></div>
+				<div class="lt_tiao"></div>
+				<div class="big_R"></div>
+				<div class="big_E"></div>
+				<div class="big_M"></div>
+			</div>
+			<div class="footer">
+				<div class="zi"></div>
+				<div class="jiantou"></div>
+				<div class="music"></div>
+			</div>
+		</div>
+	</div>
+	<audio autoplay="autoplay" loop="loop" src="Shiftone_1.18.mp3"></audio>
+</body>
+</html>

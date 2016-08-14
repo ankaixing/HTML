@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style type="text/css">
+		.wrap{
+			width: 1400px;
+			margin: 0 auto;
+		}
+		.wrap .nav{
+			height: 65px;
+			width: 1400px;
+			margin: 0 auto;
+			position: absolute;
+		}
+		.nav_opactiye{
+			height: 65px;
+			width: 1400px;
+			margin: 0 auto;
+			background-color: black;
+			opacity: 0.5;
+			position: fixed;
+		}
+		.nav_content{
+			overflow: hidden;
+			margin: 0 auto;
+			width: 980px;
+			position: fixed;
+			left: 0;
+			right: 0;
+
+			
+		}
+		.nav_a{
+			float: right;
+			margin-top: 35px;
+
+		}
+		.nav_a a{
+			color: #ffffff;
+			text-decoration: none;
+			width: 80px;
+			float: left;
+			text-align: center;
+			border-right: 2px solid #ffffff;
+		}
+		.nav_content img{
+			margin-top: 10px;
+		
+		}
+		#about{
+			border-right: none;
+		}
+		.nav_a a:hover{
+			color: #02c0e9;
+		}
+		.head{
+			height: 580px;
+			background-image: url(./img/bg.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+
+			/*最小宽度*/
+			min-width: 980px;
+			max-width: 1400px;
+		}
+		.head{
+			color: #fff;
+			text-align: center;
+			overflow: hidden;
+		}
+		.head h1{
+			margin-top: 200px;
+			font-size:40px;
+		}
+		.head p{
+			font-size: 20px;
+		}
+		.middle{
+			width: 100%;
+			text-align: center;
+		}
+		.middle img{
+			margin-top:50px; 
+		}
+		.ability{
+			width: 980px;
+			margin: 0 auto;
+			overflow: hidden;
+			margin-top: 30px;
+		}
+		.ability .ab_items{
+			float: left;
+			width: 210px;
+			height: 290px;
+			margin: 0 17px;
+		}
+		.bg_items_1{
+			width: 92px;
+			height: 106px;
+			background-image: url(./img/icon1.png);
+		}
+		.bg_items_1:hover{
+			background-image: url(./img/icon1hrove.png);
+			transition:all 3s;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 导航条 -->
+		<div class="nav">
+			<div class="nav_opactiye"></div>
+			<div class="nav_content">
+				<img src="./img/logo.gif" alt="">
+				<div class="nav_a">
+					<a href="">首页</a>
+					<a href="">能力</a>
+					<a href="">产品</a>
+					<a href="" id="about">关于</a>
+				</div>
+			</div>
+		</div>
+		<!-- 头部 -->
+		<div class="head">
+				<h1>广州掌恒</h1>
+				<p>
+					<span>ghjgh</span>
+					<span>sdfd</span>
+				</p>
+				<p>2</p>
+				<p>3</p>
+		</div>
+		
+		<!-- 内容 -->
+		<div class="middle">
+			<img src="./img/nengli.png" alt="">
+			<div class="ability">
+				<div class="ab_items">
+					<div class="bg_items_1"></div>
+				</div>
+				<div class="ab_items">
+					<div class="bg_items_1"></div>
+				</div>
+				<div class="ab_items">
+					<div class="bg_items_1"></div>
+				</div>
+				<div class="ab_items">
+				<div class="bg_items_1"></div>
+			</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="footer"></div>
+	</div>
+</body>
+</html>

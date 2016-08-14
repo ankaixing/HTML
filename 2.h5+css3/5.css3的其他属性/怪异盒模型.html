@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.div1{
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			/*box=content+padding+border+margin*/
+			border: 100px solid green;
+			/*盒子大小*/
+			/*强制进入怪异盒模型*/
+			/*box=content+margin*/
+			padding: 50px;
+			box-sizing:border-box;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+</body>
+</html>

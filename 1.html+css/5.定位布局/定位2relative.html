@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+		}
+		.div2{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			position: relative;
+			/*相对定位 基于自身定位
+					1、不脱离文档流
+					2、不改变自己的标签属性
+					3、基于自身定位
+					4、可以用来微调
+					5、如果不写定位值和没设置定位值一样
+					6、一般给绝对定位做父级使用
+			*/
+			top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>

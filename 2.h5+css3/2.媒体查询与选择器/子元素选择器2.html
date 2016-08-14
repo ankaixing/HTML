@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*从当前类型中选择计数 找到第一个符合类型的元素*/
+		/*ul li:first-of-type{
+			background-color: red;
+		}*/
+		/*从当前类型中选择计数，找到最后一个符合类型的元素*/
+		/*ul li:last-of-type{
+			
+		}*/
+
+		/*ul li:nth-of-type(3){
+			background-color: green;
+		}*/
+		/*在当前类型中计数从后往前计数*/
+		ul li:nth-last-of-type(3){
+			background-color: deepskyblue;
+		}
+		p span:only-child{
+			background-color: orange;
+		}
+		p span:only-of-type{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<span>span1</span>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<p>
+		<span>span3</span>
+		<strong>strong1</strong>
+	</p>
+</body>
+</html>

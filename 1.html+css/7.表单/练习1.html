@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			width: 100%;
+			margin: 0 auto;
+		}
+		.head{
+			width: 75%;
+			height: 75px;
+			margin: 0 auto;
+		}
+		.head_nav{
+			width: 100%;
+			overflow: hidden;
+		}
+		.head_nav a{
+			margin-top: 10px;
+			line-height: 75px;
+			float: left;
+			margin-left: 10px;
+		}
+		a{
+			text-decoration: none;
+		}
+		.head_nav .img1{
+			margin-left: 0px;
+		}
+		.head_bg{
+			width: 100%;
+			height: 10px;
+			background: url(reg_hr.png);
+		}
+		.head_nav_right{
+			width: 30%;
+			float: right;
+			height: 75px;
+		}
+		.head_nav_right span{
+			float: left;
+			line-height: 75px;
+		}
+		.btn_bg{
+			background: url('reg_icons.png') no-repeat 0 -48px;
+			width: 64px;
+			height: 35px;
+			margin-top: 20px;
+			margin-right: 35px;
+			float: right;
+		}
+		.btn_bg a p{
+			margin-left: 5px;
+			text-align: center;
+			line-height: 15px;
+		}
+		.content{
+			margin: 0 auto;
+			overflow: hidden;
+			margin-top: 70px;
+			width: 70%;
+		}
+		.conten_left{
+			float: left;
+			width: 70%;
+			height:330px;
+		}
+		.conten_right{
+			width: 260px;
+			height:210px; 
+			float: right;
+			border: 1px solid #d1eeff;
+			background-color: #f5fbff;
+		}
+		label{
+			font-size: 16px;
+			font-weight: bold;
+		}
+		#a1, #a2{
+			width: 300px;
+			height: 30px;
+			margin-top: 20px;
+		}
+		#a3{
+			margin-top: 20px;
+			width: 140px;
+			height: 30px;
+			height: 30px;
+		}
+		.yanzheng{
+			overflow: hidden;
+			
+		}
+		.yanzheng_r{
+			float: left;
+		}	
+		.btn_yz{
+			float: left;
+			margin-top: 20px;
+			width: 138px;
+			height: 32px;
+			border: 1px solid #ccc;
+			margin-left: 20px;
+			background: #F7F7F7
+
+		}
+		.btn_yz p{
+			text-align: center;
+			line-height:32px; 
+		}
+		.shouji{
+			margin: 0 auto;
+			width: 220px;
+			height: 51px;
+			border-bottom:1px solid #ccc; 
+		}
+		.shouji h3{
+			font-size: 16px;
+			line-height: 51px;
+			background-image: url(phone.png);
+			background-repeat: no-repeat;
+			background-position: 0 center;
+			padding-left: 30px;
+		}
+		.conten_right p{
+			color: #666;
+			margin-left: 10px;
+			font-size: 12px;
+			margin-top:20px;
+			line-height: 20px; 
+		}
+		#pp , #p1{
+			font-size: 14px;
+			color: orange;
+			font-weight: 700;
+			margin-top: 0px;
+		}
+		#p2{
+			margin-top: 0px;
+
+		}
+		.xieyi{
+			margin-left: 50px;
+			margin-top: 30px;
+			
+		}
+		.s1, .a1{
+			font-size: 14px;
+		}
+		.a1{
+			color: blue;
+		}
+		.sb{
+			text-align: center;
+			width: 310px;
+			height: 45px;
+			border: 0;
+			color: #fff;
+			font-size: 18px;
+			background-color: #3F89EC
+		}
+		.sub1{
+			margin-top: 30px;
+			text-align: center;
+			position: relative;
+			width: 410px;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<div class="head_nav">
+				<a href="#"><img src="baidu.gif" alt=""></a>
+				<a href=""><img src="logo.png" alt=""></a>
+				<div class="head_nav_right">
+					<span>我已注册，现在就</span>
+					<div class="btn_bg"><a href=""><p>登录</p></a></div>
+				</div>
+			</div>
+			<div class="head_bg">
+				<h1></h1>
+			</div>
+		</div>
+		<form action="" method="post">
+		<div class="content">
+			<div class="conten_left">
+				<p>
+				<label for="a1">手机号</label>
+				<input id="a1" type="text"></p>
+				<p>
+				<label style="margin-left:16px;" for="a2">密码</label>
+				<input id="a2" type="text"></p>
+				<div class="yanzheng">
+					<div class="yanzheng_r">
+						<label for="a3">验证码</label>
+						<input id="a3" type="text">
+					</div>
+					<div class="btn_yz">
+						<p>获取短信验证码</p>
+					</div>
+				</div>
+				<input class="xieyi" type="checkbox"><span class="s1">阅读并接受</span><a class="a1" href="">《百度用户协议》</a>
+				<p class="sub1"><input value="注册" class="sb" type="submit"></p>
+			</div>
+			<div class="conten_right">
+				<div class="shouji">
+					<h3>手机快速注册</h3>
+				</div>
+				<p>请使用中国大陆手机号，编辑短信：</p>
+				<p id="pp">6-14位字符（支持数字/字母/符号)</p>
+				<p>作为登录密码，发送至：</p>
+				<p id="p1">1069 80000 36590</p>
+				<p id="p2">即可注册成功，手机号即为登录帐号。</p>
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

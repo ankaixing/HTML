@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+		html,body{
+			height: 100%;
+		}
+		.wrap{
+			height: 100%;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+		}
+		.top{
+			height: 200px;
+			display: -webkit-box;
+		}
+		.yellow{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+		}
+		.gray{
+			-webkit-box-flex: 1;
+			height: 200px;
+			background-color: gray;
+		}
+		.middle{
+			-webkit-box-flex: 1;
+			display: -webkit-box;
+		}
+		.deepskyblue_l{
+			width: 170px;
+			background-color: deepskyblue;
+		}
+		.pink{	
+			-webkit-box-flex: 1;
+			background-color: pink;
+		}
+		.deepskyblue_r{
+			width: 170px;
+			background-color: deepskyblue;
+		}
+		.bottom{
+			height: 200px;
+			background-color: blue;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top">
+				<div class="yellow"></div>
+				<div class="gray"></div>
+			</div>
+			<div class="middle">
+				<div class="deepskyblue_l"></div>
+				<div class="pink"></div>
+				<div class="deepskyblue_r"></div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+	</body>
+</html>
